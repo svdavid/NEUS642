@@ -1,0 +1,3 @@
+#Answer
+for torc_idx, torc in enumerate(TorcNames):
+    TorcParams[torc] = TorcObject["Params"][torc_idx + 1]

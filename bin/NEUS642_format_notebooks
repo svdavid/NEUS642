@@ -1,21 +1,56 @@
-#! /bin/python3
+#! python
 
 from copy import deepcopy
+from functools import partial
 import json
+import numpy as np
 import os.path
 import re
+import subprocess
+import uuid
 
 
-header_pattern = re.compile(r'(?:^|\n)(#+)\s+([\d\w\s]+)\s*(?=$|\n)')
-answer_pattern = re.compile(r'^#\sanswer$', flags=re.IGNORECASE)
+header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
+answer_pattern = re.compile(r'^\s*#+\s*answer.*$', flags=re.IGNORECASE)
+exercise_pattern = re.compile(r'^Exercise\s*(?:\d+\s*)?(?:[-:]\s*([\w, `]+))?$')
 
 
-def repl(match):
+def slugify(title):
+    '''
+    Uses random UUID to help differentiate between identical titles
+    '''
+    return uuid.uuid4()
+
+
+def repl(tracker, match):
     anchor, title = match.groups()
-    slugified_title = title.replace(' ', '-')
-    template = '<a name="#{}"></a>\n{} {}\n' \
-        '<a href="#Overview">Return to overview</a>\n'
-    return template.format(slugified_title, anchor, title)
+    title = title.strip(' \t\n\r:')
+
+    if title.startswith('Exercise'):
+        match = exercise_pattern.match(title)
+        descr = match.groups('')[0]
+        tracker['n_exercises'] += 1
+        title = f"Exercise {tracker['n_exercises']}"
+        if descr:
+            title = f"{title}: {descr}"
+
+    slug = slugify(title)
+    indent = len(anchor)
+    indent = np.clip(indent, 1, tracker['last_indent'] + 1)
+    tracker['min_indent'] = min(tracker['min_indent'], indent)
+    tracker['last_indent'] = indent
+    tracker['indents'].append(indent)
+    tracker['titles'].append(title)
+    tracker['slugs'].append(slug)
+
+    return f'<a id="{slug}"></a>\n{"#" * indent} {title}\n' \
+            '<a href="#Overview">Return to overview</a>\n'
+
+
+def iter_cells(data, cell_type):
+    for cell in data['cells']:
+        if cell['cell_type'] == cell_type:
+            yield cell
 
 
 def main(base_file):
@@ -31,25 +66,28 @@ def main(base_file):
         data = json.load(fh)
 
     # First, make a pass through to generate TOC.
-    headers = []
-    min_indent = 0
-    for cell in data['cells']:
-        if cell['cell_type'] == 'markdown':
-            for i, source in enumerate(cell['source']):
-                found_headers = header_pattern.findall(source)
-                headers.extend(found_headers)
-                s = header_pattern.sub(repl, source)
-                cell['source'][i] = s
+    tracker = {
+        'n_exercises': 0,
+        'slugs': [],
+        'titles': [],
+        'indents': [],
+        'min_indent': np.inf,
+        'last_indent': 1,
+    }
+    repl_frozen = partial(repl, tracker)
 
-    min_indent = min(len(l) for l, t in headers)
+    for cell in iter_cells(data, 'markdown'):
+        for i, source in enumerate(cell['source']):
+            cell['source'][i] = header_pattern.sub(repl_frozen, source)
+
     string = ['<a href="#Overview"></a>', '# Overview']
-    for level, title in headers:
-        n_indent = (len(level)-min_indent) * 4
-        indent = ' ' * n_indent
-        title = title.strip()
-        slugified_title = title.replace(' ', '-')
-        t = r'{}* <a href="#{}">{}</a>'
-        string.append(t.format(indent, slugified_title, title))
+    n_headers = len(tracker['titles'])
+    for i in range(n_headers):
+        indent = tracker['indents'][i] - tracker['min_indent']
+        title = tracker['titles'][i]
+        slug = tracker['slugs'][i]
+        t = f'{" " * 2 * indent}* <a href="#{slug}">{title}</a>'
+        string.append(t)
 
     toc = '\n'.join(string)
     toc_cell = {
@@ -76,7 +114,7 @@ def main(base_file):
                     i_answer += 1
                     answer_filename = 'answer_{:03d}.txt'.format(i_answer)
                     answer_path = os.path.join(answer_dir, answer_filename)
-                    answer_source = base['source'][i:]
+                    answer_source = base['source']
                     with open(answer_path, 'w') as fh:
                         fh.writelines(answer_source)
 
@@ -86,7 +124,7 @@ def main(base_file):
                     teacher['source'] = base['source'][:i]
                     teacher['source'].append('%load "answers/{}"'.format(answer_filename))
 
-                    answer['source'] = base['source'][i:]
+                    answer['source'] = base['source']
 
     with open(answer_file, 'w') as fh:
         data['cells'] = answer_cells
@@ -103,5 +141,12 @@ def main(base_file):
 
 if __name__ == '__main__':
     import sys
+
+    # Get filename
     base_file = sys.argv[1]
+
+    # Run nbstripout first
+    result = subprocess.check_output(['nbstripout', base_file])
+
+    # Now, create notebooks
     main(base_file)

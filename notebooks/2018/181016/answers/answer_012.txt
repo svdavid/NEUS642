@@ -1,0 +1,7 @@
+# Answer:
+t1_index = int(round(sample_rate * 0.1))
+t2_index = int(round(sample_rate * 0.2))
+
+data_slice = current[t1_index:t2_index]
+
+print(data_slice)

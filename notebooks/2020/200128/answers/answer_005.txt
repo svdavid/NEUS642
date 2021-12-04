@@ -1,0 +1,5 @@
+# Answer 
+plt.plot(mean_responses_male, marker='o', linestyle='')
+plt.xlabel('Log[M]')
+plt.ylabel('% UK')
+plt.title('Morphine Dose Response')

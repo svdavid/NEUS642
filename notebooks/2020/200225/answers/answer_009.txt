@@ -1,0 +1,3 @@
+with model:
+# Answer    
+    nengo.Connection(cos_input, single)

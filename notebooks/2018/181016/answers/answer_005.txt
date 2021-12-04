@@ -1,0 +1,2 @@
+# Answer 
+print(data_file.abfDateTimeString)
