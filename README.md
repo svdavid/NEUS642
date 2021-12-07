@@ -5,8 +5,6 @@
 * [Overview](#overview)
 * [Time and location](#time-and-location)
 * [Course staff](#course-staff)
-	* [Course directors:](#course-directors)
-	* [Teaching assistants:](#teaching-assistants)
 * [Preparing for the course](#preparing-for-the-course)
 * [Assessment](#assessment)
 	* [Grading](#grading)
@@ -28,11 +26,11 @@ NEUS 642 is a hands-on course on the basics of Python programming for analysis o
 * Location: Vollum M1441 and on Zoom.
 
 ## Course staff
-### Course directors:
+### Course director:
 * *Stephen David, Ph.D.*. Associate professor in the Oregon Hearing Research Center (davids@ohsu.edu).
 
 ### Teaching assistants:
-* TBA
+* *TBA*
 
 ## Preparing for the course
 Before we meet, please do the following:
