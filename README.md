@@ -6,6 +6,7 @@
 * [Time and location](#time-and-location)
 * [Course staff](#course-staff)
 * [Preparing for the course](#preparing-for-the-course)
+* [Schedule](#schedule)
 * [Assessment](#assessment)
 	* [Grading](#grading)
 	* [Developing an exercise](#developing-an-exercise)
@@ -51,9 +52,7 @@ The first four weeks are designed to lead students through the basics of working
 * Week 2: [Working with dataframes](notebooks/week2_01-11/README.md)
 * Week 3: [Basic statistics and analysis in Pandas](notebooks/week3_01-18/README.md)
 * Week 4: [Image processing basics](notebooks/week4_01-25/README.md)
-
-
-
+* Weeks 5-10: Student-lead presentations
 
 ## Assessment
 
