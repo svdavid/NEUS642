@@ -22,7 +22,7 @@
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
 ## Time and location
-* Time: Tuesdays from 1 to 3pm during the winter 2022 semester (January 3 through March 18).
+* Time: Tuesdays 1-3pm during the winter 2022 quarter (January 3 through March 15).
 * Location: Vollum M1441 and on Zoom.
 
 ## Course staff
@@ -39,15 +39,21 @@ Before we meet, please do the following:
 
 * Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. You'll be working on the exercise using your laptop.
 
-* [Install Anaconda Python](#installing-python). If you have trouble with installing Anaconda Python before the first day of class, you can contact the course staff on Slack for assistance.
-
 * If you're not already familiar with Python, please start learning Python 3. You can work through the [suggested online courses and/or read the eBook](#python).
 
-* If you're already familiar with Python, but have only used Python 2, please familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html). Support for Python 2 sunset on January 1, 2020.
-
-* Work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [fall 2018 semester of NEUS642](https://github.com/bburan/NEUS642/tree/master/notebooks/2018). We will be working through some of these notebooks during the first few weeks of class.
-
 * Think about a dataset that you would like to work on for the class. During the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). I may reach out to some of you in the weeks leading up to the course and ask you to prepare your exercise in advance so that we have exercises for the first few weeks of class.
+
+## Schedule
+
+The first four weeks are designed to lead students through the basics of working with data in Python and will consist of material and exercises designed by the instructors. These lectures will also model the notebook-based format for student-led that will make up the remainder of the course. Each subsequent meeting, a student or group of students will lead the class through a notebook highlighting an analysis they developed to tackle a specific analysis problem.
+
+* Week 1: [Install Anaconda and complete basic Python tutorial](notebooks/week1_01-04/README.md)
+* Week 2: [Working with dataframes](notebooks/week2_01-11/README.md)
+* Week 3: [Basic statistics and analysis in Pandas](notebooks/week3_01-18/README.md)
+* Week 4: [Image processing basics](notebooks/week4_01-25/README.md)
+
+
+
 
 ## Assessment
 
@@ -78,6 +84,9 @@ Throughout the entire process, you will be expected to consult with the TAs and 
 All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
 
 We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) [longer support Python 2](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
+
+You may wish to work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [winter 2020 iteration of NEUS642](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive/2020). We will be working through some of these notebooks during the first few weeks of class.
+
 
 ### Python server
 There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. Prior to each class you will need to download the files and potentially update some packages.
