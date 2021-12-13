@@ -6,22 +6,22 @@ To get started, everyone should read/review this [overview of Python and the Jup
 
 ## Installing Anaconda Python
 
-There are many ways to install Python. If you've already got Python and Jupyter Notebooks installed and running on your computer, that should be fine. However, anyone with limited experence should follow these steps and work through the exercises carefully, as they form a critical foundation for the rest of the class.
+There are many ways to install Python. If you've already got Python and Jupyter Notebooks installed and running on your computer, that should be fine. However, if you don't have Python installed or aren't comfortable with managing a Python installation, you should follow these steps carefully, as they form a critical foundation for the rest of the class.
 
 In the early days, getting Python installed and working properly required a fairly sophisiticated understanding of computers and programming. Happily, Anaconda is a community-driven software management system developed specifically as a user-friendly system for getting programming languages, including Python, up and running without having to puzzle over things like LIBPATHS and version conflicts. 
 
-[Download and install Anaconda, following instructions specific to your operating system.](https://docs.anaconda.com/anaconda/install/index.html). You should be able to perform a standard installation. 
+[Download and install Anaconda, following instructions specific to your operating system.](https://docs.anaconda.com/anaconda/install/index.html). You should be able to perform a standard installation. Once installed, you should be able to open the `Anaconda Navigator`. This provides a graphical interface for managing environments and packages, which you may find useful. [More info here](https://docs.anaconda.com/anaconda/user-guide/getting-started/). 
 
-Once installed, you should be able to open the `Anaconda Navigator`. This provides a graphical interface for managing environments and packages, which you may find useful. [More info here](https://docs.anaconda.com/anaconda/user-guide/getting-started/). However, below we'll walk through a command-line approach to setting up Python, which generalizes more across different operating systems.
+Graphical tools abound for managing packages and Git repositories, which you are welcome to explore. However, below we'll walk through a command-line approach to setting up Python, which generalizes well across different operating systems and doesn't rely on potentiall unstable quirks of different graphical tools.
 
 
 ## Configuring Python
 
-The core components of Python are quite stripped down, and running analyses like those used in the course requires installation of packages.  We recommend using the `conda` package manager, which is built into Anaconda. To support the use of Python for many different applications, Anaconda allows the management of multiple `environments`. These are independent configurations of Python, allowing different packages to be installed for different applications/projects. For simplicity, we'll lead you through setting up packages in the `base` environment, but you're welcome to explore and, for example, set up an environment specifically for NEUS642.
+The core components of Python are quite stripped down, and running analyses like those used in the course requires installation of packages.  We will use the `conda` package manager, which is built into Anaconda. To support the use of Python for many different applications, Anaconda allows the management of multiple virtual `environments`. These are independent configurations of Python, allowing different packages to be installed for different applications/projects. For simplicity, we'll lead you through setting up packages in the `base` environment, but you're welcome to explore and, for example, set up an environment specifically for NEUS642.
 
-We will be using the command prompt for configuration. The command prompt is a program that allows you to interact with your computer using the keyboard instead of a mouse:
+We will be using the command line terminal for configuration. The command-line terminal is a program that allows you to interact with your computer using the keyboard instead of a mouse:
 
-* Open a command line teriminal. The specifics depend on your operating system.
+* Open a command-line teriminal. The specifics depend on your operating system.
   * Windows: Open the `Anaconda Prompt`, which you can run from the Anaconda Navigator
   * MacOS/Linux: Open a standard system Terminal.
 * Make sure you have all the Python packages you need for the first few lectures. Type the following command (several of these packages may already be installed, but this will just make sure that's the case):
@@ -33,13 +33,13 @@ conda install python matplotlib seaborn numpy pandas jupyterlab git
 
 ## Getting Started Tutorial
 
-Now you need to copy down the materials from the course Github repository to your computer. To make it easy to get future updates to the notebooks, we are going to use Git, which is a source-code management tool. To get started, we will be using the command prompt. The command prompt is a program that allows you to interact with your computer using the keyboard instead of a mouse:
+Now you need to download a copy of the materials from the course Github repository to your computer. To make it easy to get future updates to the notebooks, we are going to use Git, which is a source code management tool.
 
-* Open a command line teriminal, as described above.
-* Create and/or change to the directory where you want to store your files for NEUS642, for example, `cd /Users/joe/class/` (For user "joe" who has created a "class" folder in his home directory.)
-* Type `git clone https://github.com/svdavid/NEUS642`. (For this example, materials for the class will be downloaded to `/Users/joe/class/NEUS642/`)
+* Open a command-line teriminal, as described above.
+* Create and/or change to the directory where you want to store your files for NEUS642, for example, `cd /Users/jane/class/` (For user "jane" who has created a "class" folder in his home directory. In Windows, this might look like `cd C:\Users\jane\class\`)
+* Type `git clone https://github.com/svdavid/NEUS642`. (For this example, materials for the class will be downloaded to `/Users/jane/class/NEUS642/`)
 
-If the last step fails, it means you need to install Git. While still in the terminal, type `conda install git`. Now, try the last step again. Once you have successfully run the last step, you will now have a folder called `NEUS642`. 
+If the last step fails, it means you need to install Git. While still in the terminal, type `conda install git`. Now, try the last step again. Once you have successfully run the last step, you will now have a folder called `/Users/jane/class/NEUS642`. 
 
 Now, let's start Jupyter Notebook so we can see today's notebook. While still in the terminal:
 
@@ -55,8 +55,8 @@ Note that this is the "student" version of the notebook, which leaves the answer
 
 As the course progresses, we will be adding new materials to the NEUS Github repository. To update, you'll want to open a terminal and do the following:
 
-* Change to the directory where store your files for NEUS642, for example, `cd /Users/joe/class/NEUS642`
-* Type `git pull`. This should download any new files that have been created for the class.
+* Change to the directory where store your files for NEUS642, for example, `cd /Users/jane/class/NEUS642`
+* Type `git pull`. This should download any new files that have been created for upcoming meetings.
 
 
 ## Some notes on notebooks

@@ -48,10 +48,10 @@ Before we meet, please do the following:
 
 The first four weeks are designed to lead students through the basics of working with data in Python and will consist of material and exercises designed by the instructors. These lectures will also model the notebook-based format for student-led that will make up the remainder of the course. Each subsequent meeting, a student or group of students will lead the class through a notebook highlighting an analysis they developed to tackle a specific analysis problem.
 
-* Week 1: [Install Anaconda and complete basic Python tutorial](notebooks/week1_01-04/README.md)
-* Week 2: [Working with dataframes](notebooks/week2_01-11/README.md)
-* Week 3: [Basic statistics and analysis in Pandas](notebooks/week3_01-18/README.md)
-* Week 4: [Image processing basics](notebooks/week4_01-25/README.md)
+* Week 1: [Install Anaconda and complete Python tutorial](notebooks/week1_01-04_getting_started/README.md)
+* Week 2: [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
+* Week 3: [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
+* Week 4: [Image processing basics](notebooks/week4_01-25_images/README.md)
 * Weeks 5-10: Student-lead presentations
 
 ## Assessment
