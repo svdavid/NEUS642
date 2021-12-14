@@ -46,9 +46,7 @@ Now, let's start Jupyter Notebook so we can see today's notebook. While still in
 * Change to the folder where you cloned the notebooks by typing `cd NEUS642`.
 * Start Jupyter Notebook by typing `jupyter notebook`.
 
-A web browser should immediately open and load Jupyter Notebook. Navigate to today's notebook (under `notebooks/week1_01-04_getting_started`) and open `Getting_Started_students.ipynb`. Now it's your turn to read the contents of the notebook and work through the exercises. Feel free to play around with the example code, add cells, etc. This is your sandbox!
-
-Note that this is the "student" version of the notebook, which leaves the answers to exercises blank. If you need to get the solution, look in `Getting_Started_answers.ipynb`
+A web browser should immediately open and load Jupyter Notebook. Navigate to today's notebook (under `notebooks/week1_01-04_getting_started`) and open `Getting_Started.ipynb`. Now it's your turn to read the contents of the notebook and work through the exercises. Each exercise has includes special cell. If that cell is active, press "ctrl-enter" to load the answer and review your work. Also, feel free to play around with the example code, add cells, etc. This is your sandbox!
 
 
 ## Updating class materials
