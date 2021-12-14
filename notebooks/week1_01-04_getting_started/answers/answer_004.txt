@@ -1,0 +1,4 @@
+# Answer
+cell_count['neurons'] += 100
+cell_count['pv+'] = 144
+print(cell_count)

@@ -1,0 +1,4 @@
+# Answer
+abbr = codon_table[codon]
+aa_name = amino_acid_table[abbr]
+print("'CAA' encodes for {}".format(aa_name))

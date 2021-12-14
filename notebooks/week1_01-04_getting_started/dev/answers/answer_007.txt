@@ -1,0 +1,2 @@
+# Answer
+coding_sequence.rfind('TAG')

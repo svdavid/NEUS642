@@ -1,0 +1,5 @@
+# Answer
+type(students) ## students is a list
+type(students[0])  ## students is a list of dictionaries and the first element is a dict
+students[0]
+students[0]['first']

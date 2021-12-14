@@ -1,0 +1,8 @@
+# Answer
+new_list = ['Python.', 'learning', 'am', 'I']
+new_list.reverse()
+my_string = ' '.join(new_list)
+print(my_string)
+
+## .join() is a string method that allows you to get a string out of a list of strings. 
+## You can think of it as the opposite of .split() we saw earlier.
