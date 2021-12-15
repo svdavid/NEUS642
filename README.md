@@ -23,7 +23,7 @@
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
 ## Time and location
-* Time: Tuesdays 1-3pm during the winter 2022 quarter (January 3 through March 15).
+* Time: Tuesdays 1-3pm during the winter 2022 quarter (January 4 through March 15).
 * Location: Vollum M1441 and on Zoom.
 
 ## Course staff
@@ -48,10 +48,10 @@ Before we meet, please do the following:
 
 The first four weeks are designed to lead students through the basics of working with data in Python and will consist of material and exercises designed by the instructors. These lectures will also model the notebook-based format for student-led that will make up the remainder of the course. Each subsequent meeting, a student or group of students will lead the class through a notebook highlighting an analysis they developed to tackle a specific analysis problem.
 
-* Week 1: [Install Anaconda and complete Python tutorial](notebooks/week1_01-04_getting_started/README.md)
-* Week 2: [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
-* Week 3: [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
-* Week 4: [Image processing basics](notebooks/week4_01-25_images/README.md)
+* Week 1 (Jan 4): [Install Anaconda and complete Python tutorial](notebooks/week1_01-04_getting_started/README.md)
+* Week 2 (Jan 11): [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
+* Week 3 (Jan 18): [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
+* Week 4 (Jan 25): [Image processing basics](notebooks/week4_01-25_images/README.md)
 * Weeks 5-10: Student-lead presentations
 
 ## Assessment
@@ -63,11 +63,11 @@ This is a pass/no pass course with two credits. Grading will be based on the fol
 * Preparation of an exercise for at least one session
 
 ### Developing an exercise
-All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4) and [last year's course](https://github.com/bburan/NEUS642/notebooks/2018).
+All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4) and [previous years' courses](https://github.com/bburan/NEUS642/notebooks/2018).
 
 Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
-You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [NEUS642 webpage](https://github.com/bburan/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that instructions for installing the packages can be provided to students in advance.
+You'll be asked to develop a 90-minute exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [NEUS642 webpage](https://github.com/svdavid/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that instructions for installing the packages can be provided to students in advance.
 
 All exercises must contain sufficient background to the problem that gives your classmates sufficient background to understand the problem. Your classmates are neuroscientists, but will need some additional, domain-specific knowledge to understand the problem. Do not skip this step, or you will lose your classmates!
 
