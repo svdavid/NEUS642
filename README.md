@@ -63,13 +63,13 @@ This is a pass/no pass course with two credits. Grading will be based on the fol
 * Preparation of an exercise for at least one session
 
 ### Developing an exercise
-All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4) and [previous years' courses](https://github.com/bburan/NEUS642/notebooks/2018).
+All exercises will follow the format established in the original OHSU Python Neurobootcamp (days 2 through 4) and previous years' meetings of NEUS642. Notebooks from these previous iterations of the course are available in the [notebook archive](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive) of the current course repository.
 
 Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 You'll be asked to develop a 90-minute exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [NEUS642 webpage](https://github.com/svdavid/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that instructions for installing the packages can be provided to students in advance.
 
-All exercises must contain sufficient background to the problem that gives your classmates sufficient background to understand the problem. Your classmates are neuroscientists, but will need some additional, domain-specific knowledge to understand the problem. Do not skip this step, or you will lose your classmates!
+All exercises must contain sufficient background to the problem that gives your classmates sufficient background to understand the problem. Your classmates are neuroscientists, but will need some additional, domain-specific knowledge to understand the problem. Do not skip this step, or you will lose your classmates! 
 
 First, identify a dataset you'd like to work with. If you need help identifying a dataset pertinent to your area of interest, please contact a TA or course instructor. The dataset should be of reasonable size (i.e., no 10 gigabyte confocal images). You may need to do some post-processing of the data to get the file down to a reasonable size.
 
@@ -77,7 +77,9 @@ Next, think of a reasonable problem that you can walk the class through in two h
 
 Now, write the code to perform these steps and generate your plot. Once the code works, break it down into individual cells for a Jupyter Notebook. Above each code cell, add a Markdown cell explaining what's happening in the block below. Identify four or five cells that may serve as exercises. You'll remove the code from these cells and add some explanation above the blank cell instructing the class what problem needs to be solved before they can move onto the next step. They will then have 5-15 minutes (depending on the complexity of the problem) to try and figure out the code that solves the problem.
 
-Throughout the entire process, you will be expected to consult with the TAs and course organizers to ensure that your exercise is of appropriate level and scope for the class. It's better to be a little short than to go over time!
+Throughout the entire process, you will be expected to consult with the TAs and course organizers to ensure that your exercise is of appropriate level and scope for the class. It's better to be a little short than to go over time! 
+
+We've compiled some additional [guidelines](guidelines.md), which are useful to review as you prepare your exercise.
 
 ## Python
 All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.

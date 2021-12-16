@@ -18,15 +18,17 @@ The goal of this bootcamp is to introduce you to Python by working through some 
 
 ## What is the Jupyter Notebook and why are we using it for this course?
 
-This is a Jupyter Notebook, a space where you can combine text (this is [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and code. It is an awesome educational tool! The best part is that you will be able to interact with anything that is written here, test out code, take notes, and make it your own.
+Jupyter Notebooks are a flexible and intuitive interface for annotating and running computer code. If you're not familiar with the basic concepts around Jupyter Notebooks, you can watch this introductory video (https://www.youtube.com/watch?v=jZ952vChhuI&ab_channel=MichaelFudge)
 
-<img src="../day-5/img/jupyterInterface1.png" width = 600/>
+Below is a screenshot of a Jupyter Notebook, a space where you can combine formatted text (this is [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and code. It is an awesome educational tool! The best part is that you will be able to interact with anything that is written here, test out code, take notes, and make it your own.
+
+<img src="images/jupyterInterface1.png" width = 600/>
 
 **Remember to save changes that you have made to your Jupyter Notebook before navigating away from the page!** To do this in the notebook, hit the save button in the upper left of the web browswer. To close the notebook, close the tab. To close jupyter notebook in the terminal, press control + C (you may lose any unsaved changes). 
 
 For more information about the Jupyter Notebook and how to use it, check out the [complete guide](https://jupyter.brynmawr.edu/services/public/dblank/Jupyter%20Notebook%20Users%20Manual.ipynb).
 
-## Where to get help:
+## Other places to get help:
 
 * [Python HELP](https://www.python.org/about/help/) - Collection of links to documentation if you are new to Python
 * [Python documentation](https://docs.python.org/3/) - Comprehensive Python documentation for version 3.
@@ -41,7 +43,7 @@ MATLAB-to-Python cheat sheets:
 * http://mathesaurus.sourceforge.net/matlab-numpy.html
 * http://mathesaurus.sourceforge.net/matlab-python-xref.pdf 
 
-## Cool, nerdy articles that helped me understand better what's going on:
+## Cool, nerdy articles that helped us understand better what's going on:
 
 * [Jupyter notebook tips, tricks, and shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
 * [Explaining the 'why' behind Python's slicing syntax](http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)

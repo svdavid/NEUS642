@@ -4,5 +4,4 @@ To get started:
 * Make sure you have the latest version of the course materials:
   * `cd <my_NEUS_git_path>`
   * `git pull`
-* Open `notebooks/week2_01-11_numpy/numpy_spikes_student.ipynb` in Jupyter.
-
+* Open [numpy_spikes_students.ipynb](numpy_spikes_students.ipynb) in Jupyter.
