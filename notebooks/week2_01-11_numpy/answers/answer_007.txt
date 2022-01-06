@@ -1,0 +1,11 @@
+# Answer
+f=2462
+b = (stim[:,0]==f)
+start_times = stim[b,1]
+stop_times = stim[b,2]
+
+spike_count = 0
+for s,e in zip(start_times,stop_times):
+    spike_count += np.sum((spikes1>s) & (spikes1<=e))
+spike_rate = spike_count / stim_duration / len(start_times)
+print(f, "Hz stim: evoked rate is",np.round(spike_rate,2), "spk/s")
