@@ -31,7 +31,8 @@ NEUS 642 is a hands-on course on the basics of Python programming for analysis o
 * *Stephen David, Ph.D.*. Associate professor in the Oregon Hearing Research Center (davids@ohsu.edu).
 
 ### Teaching assistants:
-* *TBA*
+* *Mateo Lopez Espejo*. NGP student in the David Lab
+* *Greg Hamersky*. NGP student in the David Lab
 
 ## Preparing for the course
 Before we meet, please do the following:
@@ -42,7 +43,13 @@ Before we meet, please do the following:
 
 * If you're not already familiar with Python, please start learning Python 3. You can work through the [suggested online courses and/or read the eBook](#python).
 
-* Think about a dataset that you would like to work on for the class. During the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). I may reach out to some of you in the weeks leading up to the course and ask you to prepare your exercise in advance so that we have exercises for the first few weeks of class.
+* Think about a dataset that you would like to work on for the class. During the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). Some ideas for projects:
+
+  * Complete a multivariate regression on your data using the `statsmodels` library
+  * Use `biopython` to complete a BLAST query.
+  * Generate a simple `SQLite` database to keep track of your experiments.
+  * Align a set of images using `opencv-python`
+  
 
 ## Schedule
 
@@ -52,7 +59,7 @@ The first four weeks are designed to lead students through the basics of working
 * Week 2 (Jan 11): [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
 * Week 3 (Jan 18): [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
 * Week 4 (Jan 25): [Image processing basics](notebooks/week4_01-25_images/README.md)
-* Weeks 5-10: Student-lead presentations
+* Weeks 5-11: Student-lead presentations
 
 ## Assessment
 

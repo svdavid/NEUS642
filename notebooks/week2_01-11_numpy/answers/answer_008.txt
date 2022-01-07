@@ -1,3 +1,9 @@
+# We don't need to initialize these variables that describe the stimuli, 
+# but here they are for reference
+all_start_times = stim[:,1]
+pre_duration = 0.1
+pre_start_times = all_start_times - pre_duration
+
 # Answer
 spont_count = 0
 for s,e in zip(pre_start_times,all_start_times):
