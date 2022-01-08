@@ -22,6 +22,8 @@
 ## Overview
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
+The unique hands-on approach used in this class was developed initially for the 2018 [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp) at OHSU. Thanks to the bootcamp organizers, Daniela Saderi, Brad Buran, Ted Laderdas, Lisa Karstens, and Stephen David, as well as the enthusiastic bootcamp participants for the ideas and effort that have made this course possible.
+
 ## Time and location
 * Time: Tuesdays 1-3pm during the winter 2022 quarter (January 4 through March 15).
 * Location: Vollum M1441 and on Zoom.
@@ -89,9 +91,9 @@ Throughout the entire process, you will be expected to consult with the TAs and 
 We've compiled some additional [guidelines](guidelines.md), which are useful to review as you prepare your exercise.
 
 ## Python
-All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
+Students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](https://www.codecademy.com/learn/learn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
 
-We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) [longer support Python 2](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
+We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) [no longer support Python 2](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
 
 You may wish to work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [winter 2020 iteration of NEUS642](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive/2020). We will be working through some of these notebooks during the first few weeks of class.
 
