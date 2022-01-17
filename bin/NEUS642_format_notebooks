@@ -28,7 +28,11 @@ def repl(tracker, match):
 
     if title.startswith('Exercise'):
         match = exercise_pattern.match(title)
-        descr = match.groups('')[0]
+        try:
+            descr = match.groups('')[0]
+        except:
+            raise ValueError("Error parsing Exercise string: ", title)
+            
         tracker['n_exercises'] += 1
         title = f"Exercise {tracker['n_exercises']}"
         if descr:

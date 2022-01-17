@@ -1,0 +1,14 @@
+data_relabeled = data.copy()
+
+# Answer
+data_relabeled = data.rename(columns={'exposure_level': 'Exposure Level',
+                                      'days_re_exposure': 'Days RE Exposure'})
+
+grouping = data_relabeled.groupby(['Exposure Level', 'Days RE Exposure'])
+mean_thresholds = grouping['threshold'].mean()
+mean_thresholds_unstacked = mean_thresholds.unstack('Exposure Level')
+
+ax = mean_thresholds_unstacked.plot(kind='bar', yerr=sem_thresholds_unstacked)
+#ax.set_xlabel('Days re exposure')
+ax.set_ylabel('Threshold (dB SPL)')
+ax.set_xticklabels(['-3', '1', '14'], rotation=0);
