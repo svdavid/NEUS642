@@ -5,6 +5,6 @@ To get started:
   * `cd <my_NEUS_git_path>`
   * `git pull`
 * install the pyables package in your python environment:
-  * `conda install pytables
+  * `conda install pytables`
 * Open `notebooks/week4_01-25_images/numpy_spikes_student.ipynb` in Jupyter.
 
