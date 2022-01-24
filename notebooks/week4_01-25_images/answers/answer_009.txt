@@ -1,0 +1,12 @@
+#Answer
+point = stats_ribbon.loc[0]
+
+x_px = int(round(point['X']/x_size))
+y_px = int(round(point['Y']/y_size))
+z_px = int(round(point['Z']/z_size))
+
+subset_ribbon = data_ribbon[z_px-4:z_px+3, y_px-4:y_px+3, x_px-4:x_px+3]
+projection_ribbon = subset_ribbon.max(axis=0)
+plt.imshow(projection_ribbon, origin='lower', extent=(0, 1, 0, 1))
+plt.xlabel('Position X (μm)')
+plt.ylabel('Position Y (μm)')

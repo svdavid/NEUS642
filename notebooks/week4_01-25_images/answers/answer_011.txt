@@ -1,0 +1,12 @@
+#Answer
+signal = []
+for _, puncta in stats_ribbon.iterrows():
+    x_px = int(round(puncta['X']/x_size))
+    y_px = int(round(puncta['Y']/y_size))
+    z_px = int(round(puncta['Z']/z_size))
+    subset_receptor = data_receptor[z_px-4:z_px+3, y_px-4:y_px+3, x_px-4:x_px+3]
+    mean_receptor_signal = subset_receptor.mean()
+    signal.append(mean_receptor_signal)
+    
+# Here, we can save the receptor signal back to the statistics dataframe as a new column
+stats_ribbon['receptor'] = signal

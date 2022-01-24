@@ -1,0 +1,6 @@
+#Answer
+subset_receptor = data_receptor[z_px-4:z_px+3, y_px-4:y_px+3, x_px-4:x_px+3]
+projection_receptor = subset_receptor.max(axis=0)
+plt.imshow(projection_receptor, origin='lower', extent=(0, 1, 0, 1))
+plt.xlabel('Position X (μm)')
+plt.ylabel('Position Y (μm)')

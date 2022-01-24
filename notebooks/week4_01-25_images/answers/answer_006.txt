@@ -1,0 +1,4 @@
+#Answer
+cropped_ribbon = data_ribbon[:z_pixels, :y_pixels, :x_pixels]
+projection = cropped_ribbon.max(axis=0)
+plt.imshow(projection, origin='lower')
