@@ -1,0 +1,10 @@
+# Answer
+pre_trial_sec = 2
+t = np.arange(len(pupil_small_psth))/fs - pre_trial_sec
+
+plt.figure()
+plt.plot(t, pupil_small_psth*fs, label='small')
+plt.plot(t, pupil_big_psth*fs, label='big')
+plt.xlabel('time from stimulus onset (s)')
+plt.ylabel('spike/sec')
+plt.legend();

@@ -1,0 +1,3 @@
+# Answer
+spikes = np.loadtxt('data/eno052d-a1_spikes.csv', delimiter=",")
+pupil = np.loadtxt('data/eno052d-a1_pupil.csv', delimiter=",")
