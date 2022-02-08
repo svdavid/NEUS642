@@ -8,6 +8,4 @@ To get started:
   * `cd <my_NEUS_git_path>`
   * `git pull`
 
-* Open [week6_02-08_CSD.ipynb](week6_02-08_CSD.ipynb) in Jupyter.
-
-
+* Open [week6_CSD_student.ipynb](week6_CSD_student.ipynb) in Jupyter.
