@@ -1,0 +1,11 @@
+# Answer
+time = np.arange(-0.05, 0.15, 1/fs)
+plt.figure(figsize=(5,8))
+plt.imshow(CSD, extent = [-.05, .15, 0, 1000], origin = 'lower', aspect = 'auto', cmap = 'bwr')
+cbar = plt.colorbar()
+cbar.set_label("CSD uV/um^2")
+for i in range(len(mua_allspaced)):
+    plt.plot(time, mua_allspaced[i, :], linewidth = 2, color = 'k')
+plt.axvline(x = 0.01, color = 'k', label = 'axvline - full height')
+plt.xlabel("Time (s)")
+plt.ylabel("Distance from array tip (microns)");

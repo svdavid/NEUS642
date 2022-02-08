@@ -1,0 +1,8 @@
+# Answer
+
+#loop through each channel and estimate the CSD along the time dimension
+for i in range(0, len(lfp_tavg_cent) -2):
+    V0 = LFP_formatted[i + 1, :]
+    Va = LFP_formatted[i, :]
+    Vb = LFP_formatted[i + 2, :]
+    CSD_est[i, :] = (Vb + Va - 2*V0)/(ch_spacing)**2

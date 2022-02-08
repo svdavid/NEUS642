@@ -1,0 +1,10 @@
+ch_map = np.arange(0, 20*50, 50)
+plt.figure()
+plt.imshow(CSD, extent=extent, origin = 'lower', aspect = 'auto', cmap = 'bwr', clim=[-cmax,cmax])
+cbar = plt.colorbar()
+cbar.set_label("CSD uV/um^2")
+plt.xlabel("Time (s)")
+plt.ylabel("Position from recording tip (microns)")
+
+# Answer
+plt.axvline(x = 0.01, color = 'k', label = 'axvline - full height');

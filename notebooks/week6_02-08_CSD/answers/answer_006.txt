@@ -1,0 +1,11 @@
+# Answer
+
+#initialize matrix
+mua_trials = np.zeros((60, 64, int(1.6*1500)))
+
+#loop through list of epochs and for each epoch extract 
+for i in range(60):
+    mua_trials[i, :] = mua[:, round(epochs_bins[i, 0]):round(epochs_bins[i, 1])]
+    
+#sanity check that data shape is correct
+np.shape(mua_trials) 

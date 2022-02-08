@@ -1,0 +1,3 @@
+# Answer
+ch_dist = np.matlib.repmat(ch_distance, 1, len(mua_spacing[0, :]))
+mua_allspaced = mua_spacing + ch_dist

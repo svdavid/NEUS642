@@ -1,0 +1,4 @@
+# Answer
+
+lfp_tavg = lfp_trials.mean(axis = 0)
+mua_tavg = mua_trials.mean(axis = 0)

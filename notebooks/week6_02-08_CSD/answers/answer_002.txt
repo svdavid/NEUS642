@@ -1,0 +1,6 @@
+# Answer
+order = 5
+passband = 50
+sos = scipy.signal.butter(order, passband, 'highpass', fs=fs, output='sos')
+
+signal2filt = scipy.signal.sosfilt(sos, combined)

@@ -1,0 +1,3 @@
+# Answer
+
+CSD_est = np.zeros_like(LFP_formatted[:20, :])

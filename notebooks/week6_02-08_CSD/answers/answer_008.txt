@@ -1,0 +1,5 @@
+#Answer
+lfp_tavg_cent = lfp_tavg[center_ch_nums, :]
+mua_tavg_cent = mua_tavg[center_ch_nums, :]
+
+lfp_tavg_cent.shape

@@ -1,0 +1,5 @@
+# Answer
+plt.figure()
+plt.imshow(CSD, extent=extent, origin = 'lower', aspect = 'auto', cmap = 'bwr', clim=[-cmax,cmax])
+plt.xlabel("Time from stimulus onset (s)")
+plt.ylabel("Position from recording tip (microns)")

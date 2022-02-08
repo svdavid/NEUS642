@@ -1,0 +1,7 @@
+# Answer
+stim = 750
+
+prestim = stim - int((0.05*fs))
+poststim = stim + int((0.15*fs))
+
+CSD = CSD_est[:, prestim:poststim]

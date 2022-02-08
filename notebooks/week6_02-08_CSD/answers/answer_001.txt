@@ -1,0 +1,4 @@
+# Answer
+node = fh.get_node('/epochs')
+epochs = node.read()
+print(epochs.shape)

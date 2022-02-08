@@ -1,0 +1,3 @@
+# Answer
+sos = butter(4, [1, 150], 'bandpass', fs=fs, output='sos')
+lfp = sosfilt(sos, probedata, axis=1)
