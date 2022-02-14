@@ -1,0 +1,8 @@
+#Answer 
+def calculate_cov_matrix(var_1, var_2, corr_coef):
+
+  cov = corr_coef*np.sqrt(var_1*var_2)
+
+  cov_matrix = np.array([[var_1, cov], [cov, var_2]])
+
+  return cov_matrix

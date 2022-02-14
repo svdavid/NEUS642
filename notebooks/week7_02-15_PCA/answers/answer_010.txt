@@ -1,0 +1,10 @@
+# Answer 
+np.random.seed(402)
+
+variance_1 = 1
+variance_2 = 1
+corr_coef = 0.3
+
+new_cov_matrix=calculate_cov_matrix(variance_1, variance_2, corr_coef)
+new_ex_data=get_data(new_cov_matrix)
+plot_data(new_ex_data)

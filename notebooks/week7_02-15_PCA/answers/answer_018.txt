@@ -1,0 +1,3 @@
+#Answer 
+#First component= 90%
+#Second component=10%

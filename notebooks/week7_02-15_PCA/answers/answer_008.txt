@@ -1,0 +1,7 @@
+#Answer 
+
+variance_1 = 1
+variance_2 = 1
+corr_coef = 0.8
+
+cov_matrix=calculate_cov_matrix(variance_1, variance_2, corr_coef)

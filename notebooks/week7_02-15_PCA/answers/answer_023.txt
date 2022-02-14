@@ -1,0 +1,3 @@
+#Answer 
+#Essentially, it take less PCs to explain the Chirp periods as compared to the ITI. 
+#This makes sense as the stimulus(chirp) should reduce dimentionality as many neurons all "focus" on the stimulus 

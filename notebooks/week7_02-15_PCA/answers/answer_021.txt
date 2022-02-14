@@ -1,0 +1,6 @@
+#Answer 
+# Calculate the eigenvalues and eigenvectors
+evals_chirp, evectors_chirp = np.linalg.eigh(cov_chirp)
+# Sort the eigenvalues in descending order
+evals_chirp, evectors_chirp = sort_evals_descending(evals_chirp, evectors_chirp)
+evectors_chirp.shape

@@ -1,0 +1,4 @@
+#Answer 
+# split iti/stim and compare scatter plots
+pc_iti=pc_all[:41,:]
+pc_chirp=pc_all[41:,:]

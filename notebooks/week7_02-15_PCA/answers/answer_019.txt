@@ -1,0 +1,5 @@
+
+#Answer
+print(spikes_chirp_in_rows.shape)
+print(spikes_ITI_in_rows.shape)
+# remember neurons here are in rows and columns are trials. 

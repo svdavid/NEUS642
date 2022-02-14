@@ -1,0 +1,2 @@
+# Answer 
+# Activity of all the neurons X1-Xn at a single sample(timepoint)

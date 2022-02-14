@@ -1,0 +1,4 @@
+#Answer 
+# project spikes into PC space
+pc_all = np.matmul(spikes_all_m,evectors)
+pc_all.shape

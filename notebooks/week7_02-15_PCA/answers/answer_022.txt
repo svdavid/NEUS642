@@ -1,0 +1,3 @@
+#Answer
+# how much each neuron gets multiplied by to contribute to the respective pc 
+#in other words the score (Magnitude scaler/ weight) 

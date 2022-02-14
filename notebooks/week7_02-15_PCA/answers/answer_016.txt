@@ -1,0 +1,3 @@
+#Answer 
+projected_data=example_data @ evectors 
+projected_data.shape

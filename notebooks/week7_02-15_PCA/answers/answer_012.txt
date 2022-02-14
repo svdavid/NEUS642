@@ -1,0 +1,5 @@
+#Answer 
+u = np.array([3, 1])
+
+my_orthonormal_basis=define_orthonormal_basis(u)
+print(my_orthonormal_basis)

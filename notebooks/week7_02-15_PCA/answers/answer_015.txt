@@ -1,0 +1,3 @@
+#Answer 
+#Theta=45
+# The correlation is zero because PCA components are orthogonal to each other! 

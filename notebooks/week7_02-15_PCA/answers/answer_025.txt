@@ -1,0 +1,4 @@
+#Answer
+#spikes_all.shape
+spikes_all_m=spikes_all-spikes_all.mean(axis=0)
+spikes_all_m.shape

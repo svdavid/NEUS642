@@ -1,0 +1,2 @@
+#Answer
+#The variance, becase it's the covariance between $Xi$ and itself.

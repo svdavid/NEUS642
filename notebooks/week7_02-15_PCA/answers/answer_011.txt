@@ -1,0 +1,12 @@
+#Answer
+def define_orthonormal_basis(u):
+
+   # normalize vector u
+   u_norm = u / np.sqrt(u[0] ** 2 + u[1] ** 2)
+    
+   # calculate vector v that is orthogonal to u
+   v_norm = np.array([-u_norm[1], u_norm[0]])
+
+   W = np.column_stack([u_norm, v_norm])
+
+   return W
