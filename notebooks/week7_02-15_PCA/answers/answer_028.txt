@@ -1,11 +1,4 @@
 #Answer
-#The y-axis is Score/projected data?, the Y axis is  trials (samples)
-
-# Is this correct stephen? 
-
-plt.plot(pc_all[:,0], label='pc1')
-plt.plot(pc_all[:,1], label='pc2')
-plt.legend();
-plt.ylabel('Score');
-plt.xlabel('sample/Trial');
-plt.title('Activity in PC Space'); 
+#spikes_all.shape
+spikes_all_m=spikes_all-spikes_all.mean(axis=0)
+spikes_all_m.shape

@@ -1,5 +1,6 @@
-#Answer 
-# Since the data are neurons X trial, we need to transpose so that each column contains data from a single neuron
-spikes_ITI = np.transpose(spikes_ITI_in_rows)
-spikes_chirp = np.transpose(spikes_chirp_in_rows)
 
+#Answer
+print(spikes_chirp_in_rows.shape)
+print(spikes_ITI_in_rows.shape)
+
+# remember neurons here are in rows and columns are trials. 

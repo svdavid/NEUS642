@@ -1,6 +1,5 @@
 #Answer 
-# Calculate the eigenvalues and eigenvectors
-evals_chirp, evectors_chirp = np.linalg.eigh(cov_chirp)
-# Sort the eigenvalues in descending order
-evals_chirp, evectors_chirp = sort_evals_descending(evals_chirp, evectors_chirp)
-evectors_chirp.shape
+# Since the data are neurons X trial, we need to transpose so that each column contains data from a single neuron
+spikes_ITI = np.transpose(spikes_ITI_in_rows)
+spikes_chirp = np.transpose(spikes_chirp_in_rows)
+

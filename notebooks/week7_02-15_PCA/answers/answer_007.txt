@@ -1,8 +1,7 @@
 #Answer 
-def calculate_cov_matrix(var_1, var_2, corr_coef):
 
-  cov = corr_coef*np.sqrt(var_1*var_2)
+variance_1 = 1
+variance_2 = 1
+corr_coef = 0.8
 
-  cov_matrix = np.array([[var_1, cov], [cov, var_2]])
-
-  return cov_matrix
+cov_matrix=calculate_cov_matrix(variance_1, variance_2, corr_coef)

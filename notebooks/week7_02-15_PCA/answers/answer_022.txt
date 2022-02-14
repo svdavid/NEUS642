@@ -1,3 +1,4 @@
-#Answer
-# how much each neuron gets multiplied by to contribute to the respective pc 
-#in other words the score (Magnitude scaler/ weight) 
+#Answer 
+# Calculate the sample covariance matrix for each condition (ITI and Chirp )
+cov_ITI = get_sample_cov_matrix(spikes_ITI)
+cov_chirp = get_sample_cov_matrix(spikes_chirp)

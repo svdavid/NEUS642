@@ -1,5 +1,6 @@
-
 #Answer
-print(spikes_chirp_in_rows.shape)
-print(spikes_ITI_in_rows.shape)
-# remember neurons here are in rows and columns are trials. 
+# load spike rates from inter-trial intervals
+spikes_ITI_in_rows=np.loadtxt('data/FiringRateArrayITI.csv',delimiter=',')
+
+# now we get spike rates from chirp trials: 
+spikes_chirp_in_rows=np.loadtxt('data/FiringRateArrayChirp.csv',delimiter=',')

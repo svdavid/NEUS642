@@ -1,4 +1,3 @@
 #Answer 
-# split iti/stim and compare scatter plots
-pc_iti=pc_all[:41,:]
-pc_chirp=pc_all[41:,:]
+evalues,evectors=np.linalg.eigh(cov_matrix)
+evalues,evectors=sort_evals_descending(evalues, evectors)

@@ -1,7 +1,3 @@
 #Answer
-# Calculate the sample covariance matrix
-cov_matrix = get_sample_cov_matrix(spikes_all)
-plt.imshow(cov_matrix,extent=[0,20,0,20],aspect=1)
-plt.xlabel('Neurons');
-plt.ylabel('Neurons');
-plt.title('Covariance Matrix');
+evals_chirp.shape
+evectors_chirp.shape 

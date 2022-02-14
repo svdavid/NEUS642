@@ -1,3 +1,4 @@
 #Answer 
-#Theta=45
-# The correlation is zero because PCA components are orthogonal to each other! 
+sample_cov_matrix = get_sample_cov_matrix(example_data)
+print(sample_cov_matrix)
+print(cov_matrix)

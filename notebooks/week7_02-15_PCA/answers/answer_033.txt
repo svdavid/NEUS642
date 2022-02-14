@@ -1,0 +1,7 @@
+#Answer
+plt.plot(pc_iti[:,2],pc_iti[:,3],'b.',label='ITI')
+plt.plot(pc_chirp[:,2],pc_chirp[:,3],'r.', label='chirp')
+plt.legend()
+plt.xlabel('pc3')
+plt.ylabel('pc4')
+plt.title('Firing Rate of ITI trials vs Chirp trials in PCA space');

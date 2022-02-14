@@ -1,3 +1,3 @@
 #Answer 
-basis_changed = example_data @ my_orthonormal_basis
-basis_changed.shape
+#Theta=45
+# The correlation is zero because PCA components are orthogonal to each other! 

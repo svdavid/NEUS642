@@ -1,4 +1,3 @@
 #Answer
-#spikes_all.shape
-spikes_all_m=spikes_all-spikes_all.mean(axis=0)
-spikes_all_m.shape
+# how much each neuron gets multiplied by to contribute to the respective pc 
+#in other words the score (Magnitude scalar/ weight) 

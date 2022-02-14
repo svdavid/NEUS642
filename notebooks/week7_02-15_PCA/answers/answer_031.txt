@@ -1,0 +1,8 @@
+#Answer
+#The y-axis is Score/projected data, the X axis is  trials (samples)
+plt.plot(pc_all[:,0], label='pc1')
+plt.plot(pc_all[:,1], label='pc2')
+plt.legend();
+plt.ylabel('Score');
+plt.xlabel('sample/Trial');
+plt.title('Activity in PC Space'); 

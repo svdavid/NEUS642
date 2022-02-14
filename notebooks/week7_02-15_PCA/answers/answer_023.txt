@@ -1,3 +1,5 @@
 #Answer 
-#Essentially, it take less PCs to explain the Chirp periods as compared to the ITI. 
-#This makes sense as the stimulus(chirp) should reduce dimentionality as many neurons all "focus" on the stimulus 
+# Calculate the eigenvalues and eigenvectors
+evals_chirp, evectors_chirp = np.linalg.eigh(cov_chirp)
+# Sort the eigenvalues in descending order
+evals_chirp, evectors_chirp = sort_evals_descending(evals_chirp, evectors_chirp)
