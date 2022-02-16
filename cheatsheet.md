@@ -73,12 +73,14 @@ A browser tab should then open with the Jupyter notebook.
 
 ## Formatting
 
-The course staff has a script that will automatically format your notebook in preparation for class. The script will:
+The course staff has a script that will automatically format your notebook in preparation for class. Create a file called "MYNOTEBOOKE_base.ipynb". This is the "base" notebook that will be converted into "teacher", "student" and "answers" versions.
+
+The conversion script will:
 
 * Scan for all markdown headings (lines starting with `#`, `##`, `###`, etc.) and create a table of contents at the top of the file listing these headings.
 * Scan for comments in code cells starting with `# Answer`. For each code cell, everything after `# Answer` to the end of the cell will be deleted and replaced with `# Your answer here`. Note that the cell can contain text *before* the `# Answer` line that will not get deleted.
 * Scan for all exercises starting with a markdown heading (e.g., `## Exercise`, `### Exercise`, etc.) and auto-number them. **Do not number your exercises**. 
-* You may inclue a title for the exercise in the format `Exercise - title` or `Exercise: title`.
+* You may inclue a title for the exercise in the format `Exercise - title`.
 
 To take advantage of this script, ensure that you use markdown formatting for your headers and do not number your exercises:
 
@@ -94,7 +96,7 @@ To take advantage of this script, ensure that you use markdown formatting for yo
 	# Main header
 	Text goes here
 
-	### Exercise - load some data:
+	### Exercise - load some data
 	Text goes here
 
 For your answers, the cell containing the answer should be in the format:
