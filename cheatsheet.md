@@ -73,7 +73,7 @@ A browser tab should then open with the Jupyter notebook.
 
 ## Formatting
 
-The course staff has a script that will automatically format your notebook in preparation for class. Create a file called "MYNOTEBOOKE_base.ipynb". This is the "base" notebook that will be converted into "teacher", "student" and "answers" versions.
+The course staff has a script that will automatically format your notebook in preparation for class. Create a file called "MYNOTEBOOK_base.ipynb" (where MYNOTEBOOK can be any name you want, eg, "weekX_topic"). This is the "base" notebook that will be converted into "teacher", "student" and "answers" versions.
 
 The conversion script will:
 
