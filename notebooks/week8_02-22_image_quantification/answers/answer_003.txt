@@ -1,0 +1,20 @@
+def calculate_threshold(path):
+    '''
+    Description:
+    Calculate the threshold value using otsu threshold using filters from skimage.
+    
+    Parameters:
+    path (str): takes the image path in string format
+
+    Returns: 
+    int
+    '''
+    
+# Answer
+    czi_img = czifile.imread(path)
+    czi_img = czi_img[0,0,0,:,:,:,0]
+    maximg = czi_img.max(axis = 0)
+    thresh = filters.threshold_otsu(maximg)
+    
+    return thresh 
+   

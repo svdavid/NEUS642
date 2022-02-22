@@ -1,0 +1,8 @@
+#Answer
+
+injury_percentarea = value_df2.iloc[:,2]
+injury_percentarea_avg = statistics.mean(injury_percentarea)
+
+
+injury_rnai_percentarea= rnai_df.iloc[:, 2] 
+injury_rnai_percentarea_avg = statistics.mean(injury_rnai_percentarea)

@@ -1,0 +1,2 @@
+# Answer
+maximg = img.max(axis = 0)

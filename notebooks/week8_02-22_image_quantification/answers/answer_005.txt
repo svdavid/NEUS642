@@ -1,0 +1,4 @@
+#Answer
+
+calc = calculate_metrics(maximg, threshold_value) 
+print(calc)

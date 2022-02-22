@@ -1,0 +1,5 @@
+# Answer
+threshold_values1 = []
+for file in noinjury['FileName']:
+    threshold = calculate_threshold(file)
+    threshold_values1.append(threshold)

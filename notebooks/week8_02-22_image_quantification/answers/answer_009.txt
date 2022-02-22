@@ -1,0 +1,12 @@
+# Answer
+
+for x in df['FileName']:
+    max = get_max_proj(x)
+    values = calculate_metrics(max, noi_mean1)
+    mean_values.append(values[0])
+    percent_area.append(values[1])
+    
+    
+value_df['Mean Values'] = mean_values
+value_df['Percent Area'] = percent_area
+df = pd.concat([df, value_df], axis=1)

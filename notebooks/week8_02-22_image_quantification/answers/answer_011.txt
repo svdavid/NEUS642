@@ -1,0 +1,3 @@
+#Answer
+NoI_thresh_value= 25
+NoIRNAi_thresh_value = 39

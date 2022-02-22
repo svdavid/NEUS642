@@ -1,0 +1,3 @@
+# Answer
+noi_mean1 = np.mean(threshold_values1)
+print(noi_mean1)

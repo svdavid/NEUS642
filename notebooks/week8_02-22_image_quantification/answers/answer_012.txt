@@ -1,0 +1,17 @@
+#Answer
+
+rnai_df =  pd.DataFrame()
+rnai_mean_values =[]
+rnai_percent_area =[]
+
+for file in rnai_control_injury['FileName']:
+    d3 = {'FileName': file}
+    max = get_max_proj(file)
+    values = calculate_metrics(max, NoIRNAi_thresh_value)
+    rnai_mean_values.append(values[0])
+    rnai_percent_area.append(values[1])
+    rnai_df= rnai_df.append(d3, ignore_index=True)
+    
+
+rnai_df['Mean Values'] = rnai_mean_values
+rnai_df['Percent Area'] = rnai_percent_area

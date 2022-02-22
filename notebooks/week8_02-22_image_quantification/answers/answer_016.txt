@@ -1,0 +1,2 @@
+# Answer
+f_oneway(injury_percentarea, injury_rnai_percentarea )

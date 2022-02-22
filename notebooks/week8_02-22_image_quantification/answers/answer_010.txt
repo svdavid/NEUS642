@@ -1,0 +1,15 @@
+#Answer 
+NoI_thresh_values= []
+NoIRNAi_thresh_values = []
+
+for x in noinjury['FileName']:
+    threshold = calculate_threshold(x)
+    NoI_thresh_values.append(threshold)    
+noi_mean = statistics.mean(NoI_thresh_values)
+
+for y in noinjury_rnai['FileName']:
+    threshold = calculate_threshold(y)
+    NoIRNAi_thresh_values.append(threshold)
+noi_rnai_mean = statistics.mean(NoIRNAi_thresh_values)
+
+print(noi_mean, noi_rnai_mean)

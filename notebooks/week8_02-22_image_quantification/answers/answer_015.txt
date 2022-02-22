@@ -1,0 +1,11 @@
+#Answer
+
+Groups = ['Injury', 'Injury RNAi']
+Groupvalues = injury_percentarea_avg , injury_rnai_percentarea_avg
+
+New_Colors = ['purple','deeppink']
+plt.bar(Groups, Groupvalues, color=New_Colors)
+plt.title('Clearance of Olfactory Receptor Neurons', fontsize=14)
+plt.xlabel('Groups', fontsize=14)
+plt.ylabel('Percent Area', fontsize=14)
+plt.show()
