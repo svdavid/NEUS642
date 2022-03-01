@@ -1,0 +1,5 @@
+#Answer 
+OCTPEA_prepeaks=peaks_before_flash[4:12]
+OCTPEA_postpeaks=peaks_after_flash[4:12]
+CID_prepeaks=peaks_before_flash[12:16]
+CID_postpeaks=peaks_after_flash[12:16]

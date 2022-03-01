@@ -1,0 +1,8 @@
+#Answer 
+def find_postpeaks(d, UV1f=150, UV2f=300, mph=1.25, mpd=2): 
+    all_cells_prepeaks=list()
+    for cell  in range(d.shape[1]):                   
+        findprepeak= detect_peaks(d[UV1f:UV2f,cell], mph=mph, mpd=mpd)
+        all_cells_prepeaks.append(len(findprepeak))
+    mean_peak_count = sum(all_cells_prepeaks) / d.shape[1]
+    return mean_peak_count

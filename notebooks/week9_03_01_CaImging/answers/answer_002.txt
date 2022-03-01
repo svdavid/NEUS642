@@ -1,0 +1,2 @@
+#Answer 
+DMSO_trial1_norm= DMSO_trial1/baseline 

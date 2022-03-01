@@ -1,0 +1,4 @@
+#Answer 
+D= pd.read_csv('data/DMSO/DMSO1.csv', header=None,index_col=0)
+DMSO_trial1=D.values
+print("DMSO_trial1 has",DMSO_trial1.shape[1], "cells")

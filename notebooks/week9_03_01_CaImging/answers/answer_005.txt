@@ -1,0 +1,8 @@
+#Answer
+for filename in CIDfiles:
+    df = pd.read_csv(filename, index_col=0, header=None, delimiter=',')
+    d = df.values
+    dmean=np.mean(d[:5,:],axis=0,keepdims=True)
+    d /= dmean
+    data_ins.append(d)
+    conditions.append('CID')

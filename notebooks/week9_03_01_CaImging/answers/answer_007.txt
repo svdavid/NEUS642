@@ -1,0 +1,8 @@
+#Answer 
+peaks_before_flash =[]
+peaks_after_flash=[]
+for i in data_ins: 
+    b=find_prepeaks(i) 
+    peaks_before_flash.append(b) 
+    c=find_postpeaks(i) 
+    peaks_after_flash.append(c)

@@ -1,0 +1,13 @@
+#Answer 
+UV1f= 150 #frame number where first irradiation occurred
+UV2f= 300
+ypeakthreshold= 1.25 #only count peak if it is 1.25 larger, peak must be at least this value greater in y than signal before / after, mph 
+xpeakthreshold= 2 #finds tallest peak and eliminates peak in x direction on either side of peak mpd, 
+all_postpeaks=[]
+allpost_cells_peaks = list()
+for cell  in range(DMSO_trial1_norm.shape[1]):                 
+    findpostpeak= detect_peaks(DMSO_trial1_norm[UV1f:UV2f,cell], mph=ypeakthreshold, mpd=xpeakthreshold) #find peaks withindataset and generate an array
+    all_postpeaks.append(findprepeak)
+    allpost_cells_peaks.append(len(findpostpeak))
+mean_post_peak_count = sum(allpost_cells_peaks) / DMSO_trial1_norm.shape[1]
+mean_post_peak_count 
