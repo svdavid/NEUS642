@@ -1,0 +1,4 @@
+# Answer
+regr_b1 = linear_model.LinearRegression()
+regr_b1.fit(X_b1, y_b1)
+slopes_b1=regr_b1.coef_

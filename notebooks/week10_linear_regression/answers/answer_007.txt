@@ -1,0 +1,12 @@
+# Answer
+f,ax=plt.subplots(1,2, figsize=(6,3), sharex=True, sharey=True)
+x_lim=np.array([X_b1.min(),X_b1.max()])
+ax[0].scatter(X_b1[:,0],psth_b1,s=3)
+ax[0].plot(x_lim,intercept_b1+x_lim*slopes_b1[0])
+ax[0].set_ylabel('Spikes/sec')
+ax[0].set_xlabel('Amplitude (fraction 80dB)')
+ax[0].set_title('Contra')
+ax[1].scatter(X_b1[:,1],psth_b1,s=3, color='orange')
+ax[1].plot(x_lim,intercept_b1+x_lim*slopes_b1[1], color='orange')
+ax[1].set_xlabel('Amplitude (fraction 80dB)')
+ax[1].set_title('Ipsi');

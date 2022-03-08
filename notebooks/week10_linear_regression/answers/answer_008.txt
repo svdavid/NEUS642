@@ -1,0 +1,16 @@
+# Answer
+f,ax = plt.subplots(2,1,figsize=(15,5))
+ax[0].set_ylabel('Amplitude (fraction 80dB)')
+ax[0].plot(t,X_b1[:,0], label='contra')
+ax[0].plot(t,X_b1[:,1]+0.2, label='contra')
+ax[0].legend()
+
+ax[1].set_ylabel('Spikes/sec')
+ax[1].set_xlabel('Time (sec)')
+ax[1].plot(t,y_b1,label='actual')
+ax[1].plot(t,y_pred_b1,label='predicted')
+ax[1].legend()
+
+from sklearn.metrics import explained_variance_score
+r2=explained_variance_score(y_b1, y_pred_b1)
+print("variance explained:", r2)

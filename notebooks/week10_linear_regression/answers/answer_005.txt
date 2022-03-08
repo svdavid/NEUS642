@@ -1,0 +1,3 @@
+# Answer
+intercept_b1 = regr_b1.intercept_
+intercept_b1

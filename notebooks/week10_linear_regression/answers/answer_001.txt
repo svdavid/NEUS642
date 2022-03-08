@@ -1,0 +1,4 @@
+# Answer 
+fig,ax=plt.subplots(nrows=2,ncols=1,figsize=(15,5))
+ax[0].plot(stim_b1)
+ax[1].plot(psth_b1)

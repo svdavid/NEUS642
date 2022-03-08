@@ -1,0 +1,25 @@
+# Answer
+def prediction_model(X, Y, fs=100):
+
+    regr = linear_model.LinearRegression()
+    regr.fit(X, Y)
+
+    Y_pred=regr.predict(X)
+
+    f,ax = plt.subplots(2,1,figsize=(15,5))
+    t=np.arange(X.shape[0])/fs
+    ax[0].plot(t,X[:,0], label='contra')
+    ax[0].plot(t,X[:,1]+0.2, label='ipsi')
+    ax[0].set_ylabel('Amplitude (fraction 80dB)')
+    ax[0].legend()
+
+    ax[1].plot(t,Y,label='actual')
+    ax[1].plot(t,Y_pred,label='predicted')
+    ax[1].set_ylabel('Spikes/sec')
+    ax[1].set_xlabel('Time (sec)')
+    ax[1].legend()
+    
+    r2= explained_variance_score(Y, Y_pred)
+    answer= print("Variance explained:",r2)
+    slopes=regr.coef_
+    return slopes,answer

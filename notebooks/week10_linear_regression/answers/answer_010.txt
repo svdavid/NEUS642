@@ -1,0 +1,29 @@
+# Answer
+def scatter_plt(X,Y):
+    """
+    parameters:
+       X - stimulus (independent variables)
+       Y - response (dependent variable)
+    """
+    regr = linear_model.LinearRegression()
+    regr.fit(X, Y)
+    regr.coef_
+    
+    f,ax=plt.subplots(1,2, figsize=(6,3), sharex=True, sharey=True)
+    intercept = regr.intercept_
+    slopes = np.array(regr.coef_)
+    x_lim=np.array([X.min(),X.max()])
+    ax[0].scatter(X[:,0],Y,s=3)
+    ax[0].plot(x_lim,intercept+x_lim*slopes[0])
+    ax[0].set_title("Contra")
+    ax[0].set_ylabel('Spikes/sec')
+    ax[0].set_xlabel('Amplitude (fraction 80dB)')
+    ax[1].scatter(X[:,1],Y,s=3, color='orange')
+    ax[1].plot(x_lim,intercept+x_lim*slopes[1], color='orange')
+    ax[1].set_title("Ipsi")
+    ax[1].set_ylabel('Spikes/sec')
+    ax[1].set_xlabel('Amplitude (fraction 80dB)')
+    
+    plt.show()
+    
+    return plt.show()

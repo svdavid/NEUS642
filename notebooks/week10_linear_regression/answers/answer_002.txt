@@ -1,0 +1,8 @@
+# Answer
+fig,ax=plt.subplots(nrows=2,ncols=1,figsize=(15,5))
+ax[0].plot(t,stim_b1)
+ax[0].set_ylabel('Amplitude (fraction 80dB)')
+ax[0].legend(('contra','ipsi'))
+ax[1].plot(t,psth_b1)
+ax[1].set_ylabel('Spikes/sec')
+ax[1].set_xlabel('Time (sec)')
