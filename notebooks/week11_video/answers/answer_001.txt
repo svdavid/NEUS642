@@ -1,0 +1,7 @@
+#Answer
+threshold = 0.5
+threshold_check = dlc_data['chin']['likelihood'].values > threshold
+chin_above_threshold = dlc_data['chin']['x'][threshold_check]
+
+print('original number of frames:',len(dlc_data))
+print('frames above threshold:',len(chin_above_threshold))

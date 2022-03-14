@@ -1,0 +1,8 @@
+#Answer
+plt.figure(figsize=(10,5))
+plt.plot(bp_coords, pca.components_[:,:2])
+plt.legend(['PC1', 'PC2'], loc=(1.04,0.5))
+plt.axhline(y=0,color='k',linestyle='--')
+plt.xticks(rotation=60);
+plt.ylabel('score')
+plt.title('facial marker eigenvectors');

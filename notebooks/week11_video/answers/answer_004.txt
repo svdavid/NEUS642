@@ -1,0 +1,13 @@
+#Answer
+PC1_miss = PC_trials(Xpca, 0, 'MISS_TRIAL', task_data)
+PC2_miss = PC_trials(Xpca, 1, 'MISS_TRIAL', task_data)
+
+for p in range(len(PC1_miss)):
+    plt.plot(t, PC1_miss[p], color='b');
+    plt.plot(t, PC2_miss[p], color='r');
+
+plt.title('miss trials (n={})'.format(len(PC1_miss)))
+plt.xlabel('time relative to trial onset (s)')
+plt.ylabel('score')
+plt.ylim([-5,15])
+plt.legend(['PC1','PC2']);

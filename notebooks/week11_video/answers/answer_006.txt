@@ -1,0 +1,10 @@
+# Answer
+order = 5
+passband = 0.02
+sos = scipy.signal.butter(order, passband, 'lowpass', fs=fps, output='sos')
+
+eye_sep_smooth = scipy.signal.sosfilt(sos, eye_separation)
+plt.figure(figsize=(10,2))
+plt.plot(eye_sep_smooth)
+plt.xlabel('video frame')
+plt.ylabel('eyelid separation')

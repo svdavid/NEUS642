@@ -1,0 +1,12 @@
+#Answer
+prehit_PC2 = PC_trials(Xpca, 1, 'HIT_TRIAL', task_data, post_sec=0)
+prehit_PC2_var = np.std(prehit_PC2, axis=1)
+
+premiss_PC2 = PC_trials(Xpca, 1, 'MISS_TRIAL', task_data, post_sec=0)
+premiss_PC2_var = np.std(premiss_PC2, axis=1)
+
+flexible_permutation_test(prehit_PC2, premiss_PC2, my_absolute_mean_difference, N=1000, verbose=True)
+plt.title('PC2 score');
+
+flexible_permutation_test(prehit_PC2_var, premiss_PC2_var, my_absolute_mean_difference, N=1000, verbose=True)
+plt.title('PC2 variance');
