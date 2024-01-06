@@ -32,9 +32,10 @@ The unique student-led approach used in this class was developed initially for t
 
 ## Course staff
 ### Course director:
-* *Stephen David, Ph.D.*. Associate Professor in the Oregon Hearing Research Center (davids@ohsu.edu).
+* *Stephen David, Ph.D.*. Associate Professor, Oregon Hearing Research Center (davids@ohsu.edu).
 
 ### Teaching assistant(s):
+* *Jonah Stickney*. Ph.D. Student, Behavioral and Systems Neuroscience
 * *Leo Tavares*. Postdoctoral Fellow, Vollum Institute
 
 ## Preparing for the course
@@ -70,9 +71,9 @@ This is a pass/no pass course worth three credits. Grading will be based on the 
 * Preparation of an exercise for at least one session
 
 ### Developing an exercise
-All exercises will follow the format established in the original OHSU Python Neurobootcamp (days 2 through 4) and previous years' meetings of NEUS642. Notebooks from these previous iterations of the course are available in the[notebook archive](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive) of the current course repository.     
+All exercises will follow the format established in the original OHSU Python Neurobootcamp and previous years' meetings of NEUS 642. Notebooks from these previous iterations of the course are available in the [notebook archive](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive) of the current course repository.
 
-Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).    
+Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 You'll be asked to develop a 90-minute exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [NEUS642 webpage](https://github.com/svdavid/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that instructions for installing the packages can be provided to students in advance.
 
@@ -89,15 +90,14 @@ Throughout the development process, you will be expected to consult with the TAs
 We've compiled some additional [guidelines](guidelines.md), which are useful to review as you prepare your exercise. 
 
 ## Python
-Students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](https://www.codecademy.com/learn/learn-python) and [udacity](https://www.
-udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.      
+Students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](https://www.codecademy.com/learn/learn-python-3) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.      
 
 We will be using Python 3.7 or later for the course. The changes in newer versions of Python are relatively small. The last major overhaul was version 3.0. Some widely used code still runs on 2.0, but that should not be relevant to most of you.
 
-You may wish to work through the five days of the[Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Lab (see below). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [winter 2020 iteration of NEUS642](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive/2020). We will be working through some of these notebooks during the first few weeks of class.
+You may wish to work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Lab (see below). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [winter 2020 iteration of NEUS642](https://github.com/svdavid/NEUS642/tree/master/notebooks/archive/2020). We will be working through some of these notebooks during the first few weeks of class.
 
 ### Installing Python
-These days we recommend the [Anaconda Python Distribution](https://www.anaconda.com) since it is free to use (both for commercial and academic use), can be installed on computers without administrative privileges and makes it easy to install various third-party Python packages. To get started with your own copy of Python::  
+We recommend the [Anaconda Python Distribution](https://www.anaconda.com), since it is free to use (both for commercial and academic use) and makes it easy to install a huge variety of third-party Python packages. To get started with your own copy of Python::  
 
 * [Download](https://www.anaconda.com/download) the installer and run it. Select all default options. When it asks you whom to install for, select "Just Me" (the recommended option). You can skip the option to install Microsoft VsCode (unless you want to give a more elaborate IDE a try!)   
 
