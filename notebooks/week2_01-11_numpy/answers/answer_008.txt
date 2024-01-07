@@ -3,10 +3,12 @@
 all_start_times = stim[:,1]
 pre_duration = 0.1
 pre_start_times = all_start_times - pre_duration
+total_trials = len(pre_start_times)
 
 # Answer
-spont_count = 0
-for s,e in zip(pre_start_times,all_start_times):
-    spont_count += np.sum((spikes2>s) & (spikes2<=e))
-spont_rate2 = spont_count/len(pre_start_times)/pre_duration
+spont_single_rates = np.zeros(total_trials)
+for i,(s,e) in enumerate(zip(pre_start_times,all_start_times)):
+    spont_single_rates[i] = np.sum((spikes2>s) & (spikes2<=e))/pre_duration
+spont_rate2 = np.mean(spont_single_rates)
+
 np.round(spont_rate2,3)
