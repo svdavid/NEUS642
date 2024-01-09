@@ -1,3 +1,3 @@
 # Answer
-start_codon = coding_sequence.find('ATG')
-print(start_codon)
+mRNA_sequence = coding_sequence.replace("T", "U")
+print(mRNA_sequence)

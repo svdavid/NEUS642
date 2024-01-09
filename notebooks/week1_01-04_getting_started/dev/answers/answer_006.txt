@@ -1,3 +1,0 @@
-# Answer
-start_codon = coding_sequence.find('ATG')
-print(start_codon)

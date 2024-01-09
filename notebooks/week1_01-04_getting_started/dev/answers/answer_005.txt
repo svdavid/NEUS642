@@ -1,3 +1,0 @@
-# Answer
-mRNA_sequence = coding_sequence.replace("T", "U")
-print(mRNA_sequence)

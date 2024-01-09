@@ -1,2 +1,0 @@
-# Answer
-my_string[7:]

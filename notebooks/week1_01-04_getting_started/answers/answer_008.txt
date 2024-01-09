@@ -1,6 +1,2 @@
 # Answer
-codon = "AAG"
-abbr = codon_table[codon]
-print("'AAG' is associated to '{}' ".format(abbr))
-
-## Check out the Appendix for more on printing string formatting
+coding_sequence.rfind('TAG')

@@ -1,3 +1,9 @@
 # Answer
-mRNA_sequence = coding_sequence.replace("T", "U")
-print(mRNA_sequence)
+def comprehendible_function(x,y):
+    return y+x
+
+y=0
+print(comprehendible_function(11,32))
+
+y=100
+print(comprehendible_function(11,32))

@@ -1,2 +1,3 @@
 # Answer
-coding_sequence.rfind('TAG')
+start_codon = coding_sequence.find('ATG')
+print(start_codon)
