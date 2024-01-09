@@ -1,8 +1,10 @@
 # NEUS 642 Week 1: Install Anaconda, Python and Jupyter Notebooks; Getting Started in Python
 
-Our first class is independent and self-paced. It has two major components: 1) get Python installed and running on your computer and 2) work through the Getting Started tutorial. For students with some Python experience, these exercises might be easy. Good for you! Our goal is to make sure that everyone has the basics worked out before we launch into more focused problems.
+Our first class has two major components: 1) get Python installed and running on your computer and 2) work through the Getting Started tutorial. For students with some Python experience, these exercises might be easy. Good for you! Our goal is to make sure that everyone has the basics worked out before we launch into more focused problems.
 
-To get started, everyone should read/review this [overview of Python and the Jupyter Notebook programming environment](AboutPython.md), and make sure you're familiar with some basic concepts. Then follow the directions below.
+If you're new to Python, you might want to review this [overview of Python and the Jupyter Notebook programming environment](AboutPython.md), in your free time.
+
+We'll work through the following steps to get Python installed on everyone's computer.
 
 ## Installing Anaconda Python
 
