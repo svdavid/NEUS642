@@ -66,3 +66,7 @@ You'll note that we have four versions of each notebook. The purpose of the othe
 * `teacher` - This is the version used by the presenter. The answers have been removed from the notebook, but will automatically be loaded once you execute the cell (note you will need to execute the cell twice, once to load the solution and again to run the solution).
 * `answers` - Same as `base`, except it contains a nicely-formatted table of contents.
 
+
+## ChatGPT and friends
+
+One important event that has changed the playing field for this type of work is the appearance of ChatGPT and related large-language AI systems. ChatGPT can be a very useful tool, but for the purposes of this course, be careful not to use it as too much of a crutch. We'll talk about situations where it can be useful at various points in the course. 
