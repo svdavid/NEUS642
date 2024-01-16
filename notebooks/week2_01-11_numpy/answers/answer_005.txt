@@ -1,2 +1,3 @@
+x = spikes1.min()
 # Answer
-(stim[:,2]-stim[:,1]).mean()
+np.round(x, 3)

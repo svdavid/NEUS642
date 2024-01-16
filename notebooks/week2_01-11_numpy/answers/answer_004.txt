@@ -1,3 +1,2 @@
-x = spikes1.min()
 # Answer
-np.round(x, 3)
+(a[a>4]).mean()

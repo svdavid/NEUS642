@@ -1,6 +1,6 @@
-# Answer
-a = np.zeros((3,1))
-b = np.array([[1],[2],[3]])
+a = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
+b = np.array([[9, 10], [11, 12], [13, 14]])
 
-c = np.append(a,b,axis=1)
+# Answer
+c = np.append(a, b, axis=0)
 c

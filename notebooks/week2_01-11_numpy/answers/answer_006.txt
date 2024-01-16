@@ -1,3 +1,2 @@
 # Answer
-f=933
-np.sum(stim[:,0]==f)  # or b.sum()
+(stim[:,2]-stim[:,1]).mean()

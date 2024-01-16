@@ -1,17 +1,12 @@
-spike_counts = np.zeros(len(start_times))
-plt.figure()
-for i in range(len(start_times)):
-    s = start_times[i]-0.1
-    e = stop_times[i]+0.1
-    
-    spike_times = spikes1[(spikes1>s) & (spikes1<e)] - start_times[i]
-    plt.plot(spike_times,np.ones(spike_times.shape)*i,'k.')
-    
-plt.xlabel('Time from stimulus onset (s)')
-plt.xlim([-0.1, 0.4])
+# Code copied from above
+plt.plot(f_list, spike_rates, 'o-', label=cell1_label)
+plt.plot(f_list, spike_rates2, 's-', label=cell2_label)
+plt.legend()
+plt.xlabel('Frequency (Hz)')
+plt.ylabel('Mean spike rate');
 
-# Now add code to plot the vertical lines
+# Now plot the horizontal lines in matching colors.
 
 # Answer
-plt.axvline(0, color='lightgreen', linestyle='--')
-plt.axvline(0.3, color='lightgreen', linestyle='--');
+plt.axhline(spont_rate, linestyle='--', color=color_set[0])
+plt.axhline(spont_rate2, linestyle='--', color=color_set[1])
