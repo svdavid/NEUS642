@@ -3,7 +3,6 @@ Subject 1,left,40.0,2016-12-24
 Subject 1,right,30.0,2016-12-24
 Subject 1,left,35.0,2017-01-10
 Subject 1,right,40.0,2017-01-10
-Subject 1,right,,2017-01-10
 Subject 2,left,30.0,2016-12-25
 Subject 2,right,25.0,2016-12-25
 Subject 3,left,35.0,2016-12-25
@@ -12,7 +11,6 @@ Subject 4,left,35.0,2016-12-24
 Subject 4,right,30.0,2016-12-24
 Subject 4,left,25.0,2017-01-10
 Subject 4,right,35.0,2017-01-10
-Subject 5,left,,2016-12-24
 Subject 5,right,40.0,2016-12-24
 Subject 5,left,35.0,2017-01-10
 Subject 5,right,30.0,2017-01-10
@@ -20,8 +18,6 @@ Subject 6,left,30.0,2016-12-25
 Subject 6,right,30.0,2016-12-25
 Subject 7,left,50.0,2017-05-06
 Subject 7,right,70.0,2017-05-06
-Subject 7,right,,2017-05-06
-Subject 7,right,,2017-05-23
 Subject 7,left,40.0,2017-05-23
 Subject 7,right,60.0,2017-05-23
 Subject 8,left,35.0,2017-05-06
@@ -70,23 +66,18 @@ Subject 15,left,25.0,2017-04-06
 Subject 15,right,35.0,2017-04-06
 Subject 16,right,30.0,2015-08-21
 Subject 16,left,35.0,2015-08-21
-Subject 16,left,,2015-08-21
 Subject 16,left,35.0,2015-08-25
 Subject 16,right,45.0,2015-08-25
 Subject 16,left,35.0,2015-09-07
 Subject 16,right,45.0,2015-09-07
 Subject 17,left,25.0,2015-08-21
 Subject 17,right,30.0,2015-08-21
-Subject 17,left,,2015-08-21
-Subject 17,right,,2015-08-21
 Subject 17,left,50.0,2015-08-25
 Subject 17,right,55.0,2015-08-25
 Subject 17,left,35.0,2015-09-07
 Subject 17,right,35.0,2015-09-07
 Subject 18,right,35.0,2015-08-21
 Subject 18,left,35.0,2015-08-21
-Subject 18,left,,2015-08-21
-Subject 18,right,,2015-08-21
 Subject 18,left,60.0,2015-08-25
 Subject 18,right,65.0,2015-08-25
 Subject 18,left,40.0,2015-09-07
@@ -130,7 +121,6 @@ Subject 25,right,30.0,2015-09-05
 Subject 25,right,60.0,2015-09-09
 Subject 25,left,50.0,2015-09-22
 Subject 25,right,35.0,2015-09-22
-Subject 26,left,,2015-09-05
 Subject 26,right,45.0,2015-09-05
 Subject 26,left,70.0,2015-09-09
 Subject 26,right,65.0,2015-09-09
