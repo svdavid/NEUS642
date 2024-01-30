@@ -4,7 +4,7 @@ To get started:
 * Make sure you have the latest version of the course materials:
   * `cd <my_NEUS_git_path>`
   * `git pull`
-* install the pyables package in your python environment:
-  * `conda install pytables`
+* install the pyables and opencv packages in your python environment. You'll need pytables for class and opencv for homework.
+  * `conda install pytables opencv`
 * Open `notebooks/week4_01-25_images/numpy_spikes_student.ipynb` in Jupyter.
 
