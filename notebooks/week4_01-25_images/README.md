@@ -6,5 +6,5 @@ To get started:
   * `git pull`
 * install the pyables and opencv packages in your python environment. You'll need pytables for class and opencv for homework.
   * `conda install pytables opencv`
-* Open `notebooks/week4_01-25_images/numpy_spikes_student.ipynb` in Jupyter.
+* Open `notebooks/week4_01-25_images/Week4_image_processing_students.ipynb` in Jupyter.
 
