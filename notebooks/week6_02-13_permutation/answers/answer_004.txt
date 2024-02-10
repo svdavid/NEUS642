@@ -1,0 +1,5 @@
+# Answer
+pupil_big_psth = np.mean(spikes[:,mean_pupil_per_trial>pupil_median], axis=1)
+pupil_small_psth = np.mean(spikes[:,mean_pupil_per_trial<=pupil_median], axis=1)
+
+np.sum(mean_pupil_per_trial>pupil_median), np.sum(mean_pupil_per_trial<=pupil_median),

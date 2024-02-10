@@ -1,0 +1,27 @@
+# Answer
+def my_permutation_test(a,b,N=100):
+    """
+    use permutation to test whether the means of a and b are significantly different.
+    inputs:
+       a, b: 1-D distributions of data
+       N: number of permutations
+    outputs:
+       p: p-value, how likely the absolute value of the mean difference occured by chance
+    """
+    # first, compute the shuffled mean differences
+    shuffled_distribution = np.zeros(N)
+    for i in range(N):
+        all_data = np.append(a, b)
+        s = np.random.permutation(all_data)
+        a_shuffled = s[:len(a)]
+        b_shuffled = s[len(a):]
+        shuffled_distribution[i] = np.mean(a_shuffled) - np.mean(b_shuffled)
+    
+    # now compute p
+    effective_distribution = np.append(shuffled_distribution, a.mean()-b.mean())
+
+    total_N = len(effective_distribution)
+    greater_equal_N = np.sum(np.abs(effective_distribution) >= np.abs(a.mean()-b.mean()))
+    p = greater_equal_N / total_N
+    
+    return p
