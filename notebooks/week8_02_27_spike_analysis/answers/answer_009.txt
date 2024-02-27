@@ -1,6 +1,4 @@
-
 # Answer
-
 for i, r in df_files.iterrows():
     print("Processing:", i, r['filepath'])
 

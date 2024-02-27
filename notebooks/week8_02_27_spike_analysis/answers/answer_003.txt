@@ -1,4 +1,3 @@
-
 #Answer
 
 # Set the threshold
