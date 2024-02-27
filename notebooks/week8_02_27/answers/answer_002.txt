@@ -1,0 +1,11 @@
+# Answer 
+# Plot the data
+plt.plot(time, depo_pA, label='Depo_pA')
+
+# Add labels and title
+plt.xlabel('Time')
+plt.ylabel('Voltage')
+plt.title('Plot of Time vs Depo_pA')
+#plt.xlim(.9,2.1)
+# Add legend
+plt.legend()

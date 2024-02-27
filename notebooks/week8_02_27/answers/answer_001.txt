@@ -1,0 +1,10 @@
+time 
+depo_pA 
+
+# Answer 
+
+#convert_to_mv = 10e10
+time = Test[:, 0]
+depo_pA = Test[:, 4]
+
+depo_pA.shape

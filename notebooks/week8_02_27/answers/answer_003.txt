@@ -1,0 +1,11 @@
+#Answer
+
+# Set the threshold
+threshold = 0
+
+# Define the time range (between 1 and 2 seconds)
+start_time = 1
+end_time = 2
+
+# Find the indices within the specified time range
+time_indices = np.where((time >= start_time) & (time <= end_time))[0]

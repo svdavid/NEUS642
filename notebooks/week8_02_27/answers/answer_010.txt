@@ -1,0 +1,90 @@
+# Answer 
+
+import os
+import numpy as np
+from scipy.signal import find_peaks
+import pandas as pd
+
+def analyze_data(top_folder_path):
+    # Initialize lists to store results
+    file_names = []
+    parent_folders = []  
+    subfolders = []  
+    num_spike_events_list = []
+    inter_spike_intervals_list = []
+    spike_frequency_list = []
+    time_to_last_spike_list = []
+
+    count = 0
+
+    # Iterate through all subfolders within the top folder
+    for root, dirs, _ in os.walk(top_folder_path):
+        # Check if the current subfolder is a 'morphine' or 'NLX' folder
+        if os.path.basename(root) in ['Morphine', 'NLX']:
+            # Get the parent folder (Naive or MTA)
+            parent_folder = os.path.basename(os.path.dirname(root))
+            # Get the subfolder (morphine or NLX)
+            subfolder = os.path.basename(root)
+
+            # Iterate through all files in the current folder
+            for file_name in os.listdir(root):
+                if file_name.endswith('.axgt'):
+                    # Load data from the file
+                    file_path = os.path.join(root, file_name)
+                    data = np.loadtxt(file_path, skiprows=1, delimiter='\t')
+
+                    # Extract time and data for analysis
+                    time = data[:, 0]
+                    experiment_data = data[:, 4]  # Change the column index as needed
+
+                    # Analysis results for: number of spikes/frequency/time to last spike  
+                    threshold = 0
+                    peaks, _ = find_peaks(experiment_data, height=threshold)
+
+                    num_spike_events = len(peaks)
+                    inter_spike_intervals = np.diff(time[peaks])
+
+                    if num_spike_events > 0:
+                        spike_frequency = num_spike_events / np.sum(inter_spike_intervals)
+                    else:
+                        spike_frequency = np.nan
+
+                    onset_time = 1
+                    time_to_last_spike = time[peaks[-1]] - onset_time if num_spike_events > 0 else None
+
+                    # Add results to lists
+                    file_names.append(file_name)
+                    parent_folders.append(parent_folder)  
+                    subfolders.append(subfolder)  
+                    num_spike_events_list.append(num_spike_events)
+                    inter_spike_intervals_list.append(inter_spike_intervals)
+                    spike_frequency_list.append(spike_frequency)
+                    time_to_last_spike_list.append(time_to_last_spike)
+
+                    count += 1
+
+    # Create a spreadsheet (CSV file) with the results
+    output_directory = "output"
+    os.makedirs(output_directory, exist_ok=True)
+
+    output_file_path = os.path.join(output_directory, 'analysis_results.csv')
+
+    df = pd.DataFrame({
+        'File Name': file_names,
+        'Parent Folder': parent_folders,  
+        'Subfolder': subfolders,  
+        'Number of Spike Events': num_spike_events_list,
+        'Inter-Spike Intervals': inter_spike_intervals_list,
+        'Spike Frequency (Hz)': spike_frequency_list,
+        'Time to Last Spike': time_to_last_spike_list
+    })
+
+    df.to_csv(output_file_path, index=False)
+
+    print(f"Results saved to {output_file_path}")
+    print(f"Number of times the loop ran: {count}")
+
+# The top-level folder path ('Data' folder)
+top_folder_path = 'Data'  
+analyze_data(top_folder_path)
+

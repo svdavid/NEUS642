@@ -1,0 +1,5 @@
+#Answer 
+
+# Calculate inter-spike intervals
+inter_spike_intervals = np.diff(time[peaks])
+inter_spike_intervals
