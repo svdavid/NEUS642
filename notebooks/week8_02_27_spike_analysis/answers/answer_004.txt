@@ -1,3 +1,4 @@
+
 #Answer 
 
 # Initialize a counter for the occurrences

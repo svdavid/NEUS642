@@ -1,12 +1,22 @@
+
 # Answer
 
 for i, r in df_files.iterrows():
     print("Processing:", i, r['filepath'])
 
-    spike_times = get_spike_times(r['filepath'])
+    data = np.loadtxt(r['filepath'], skiprows=1, delimiter='\t')
     
-    inter_spike_intervals = np.diff(spike_times)
-    num_spike_events = len(spike_times)
+    # Extract time and data for analysis
+    time = data[:, 0]
+    experiment_data = data[:, 4] 
+    
+    # Analysis results for: number of spikes/frequency/time to last spike  
+    threshold = 0
+    peaks, _ = find_peaks(experiment_data, height=threshold)
+
+    
+    inter_spike_intervals = np.diff(peaks)
+    num_spike_events = len(peaks)
     
     if num_spike_events > 0:
         spike_frequency = num_spike_events / np.sum(inter_spike_intervals)
@@ -14,7 +24,7 @@ for i, r in df_files.iterrows():
         spike_frequency = np.nan
     
     onset_time = 1
-    time_to_last_spike = spike_times.max() if num_spike_events > 0 else None
+    time_to_last_spike = peaks.max() if num_spike_events > 0 else None
 
     df_files.loc[i,'spike_count']=num_spike_events
     df_files.loc[i,'spike_frequency']=spike_frequency
