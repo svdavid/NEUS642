@@ -1,0 +1,6 @@
+neoseg = img2.get_fdata().copy()
+# Answer here
+#Your Answer Here
+neoseg[neoseg==7]=0 # cerebellum to 0
+neoseg[neoseg==8]=0 # brainstem to 0
+

@@ -1,0 +1,8 @@
+segmented_vol2=img2.get_fdata().copy()
+# Answer
+segmented_vol2[segmented_vol2>10]=10
+
+
+fig, ax = plt.subplots(figsize=(12,8))
+ax.imshow(T1_vol[:,:,50],cmap='gray')
+ax.imshow(segmented_vol2[:,:,50], alpha = .1, cmap ='tab20')

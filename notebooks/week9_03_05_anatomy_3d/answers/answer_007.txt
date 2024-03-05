@@ -1,0 +1,3 @@
+# Answer
+#Your Answer Here
+wmdist[wm==0]=0

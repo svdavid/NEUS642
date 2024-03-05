@@ -1,0 +1,5 @@
+# Answer here
+#Your Answer Here
+wm[neoseg==3]=1
+gm[neoseg==2]=1
+csf[neoseg==1]=1

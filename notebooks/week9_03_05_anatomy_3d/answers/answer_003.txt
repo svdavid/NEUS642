@@ -1,0 +1,5 @@
+# Answer here
+#Your Answer Here
+wm=neoseg*0
+gm=neoseg*0
+csf=neoseg*0

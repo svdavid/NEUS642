@@ -1,0 +1,4 @@
+# Answer
+#Your Answer Here
+bindist=scipy.ndimage.distance_transform_edt(binary_image==1)
+print(bindist)
