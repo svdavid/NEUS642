@@ -1,7 +1,5 @@
 # Answer
 
-import tkinter as tk
-
 def calculate():
     try:
         pixel_size_val = float(pixel_size.get())
