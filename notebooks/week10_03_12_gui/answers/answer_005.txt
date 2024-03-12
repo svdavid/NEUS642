@@ -1,0 +1,7 @@
+l2 = tk.Label(bg="#F39C12",font=("Arial",30),text="")
+
+# Answer
+def generate_number():
+    
+    number = random.randint(0,1000)
+    l2.config(text = f"{number:3d}")

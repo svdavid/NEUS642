@@ -1,0 +1,6 @@
+# Answer
+def generate_number():
+    
+    # Answer
+    number = random.randint(0,1000)
+    l2.config(text = f"{number:3d}")
