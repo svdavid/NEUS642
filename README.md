@@ -20,9 +20,11 @@
 <!-- vim-markdown-toc -->
 
 ## Overview
-NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are strongly encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels, but a basic knowledge of programming is encouraged.
+NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. A basic knowledge of programming is encouraged, but the course is open to students of ALL levels of programming experience. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are strongly encouraged to bring their own data and/or analysis problem to the course.
 
-During each meeting, the lecturer will lead students through a series of exercises in a Jupyter Notebook, a documents that contain live code, equations, visualizations and narrative text. We will go through the specifics of setting up JupyterLab during the first lecture. But if you want to get a head start, learn more from our [Jupyter cheat sheet](cheatsheet.md).
+Before each meeting, students will be expected to work through a series of guided exercises in a Jupyter Notebook, a documents that contain live code, equations, visualizations and narrative text. During each meeting, we will review that work and work interactively on a small project that builds on the previous week's exercises. 
+
+It is expected that each student can bring their own laptop. If you don't have a laptop, contact the instructors, and we can arrange a loan. During the first meeting, we will go through the specifics of setting up JupyterLab. But if you want to get a head start, learn more from our [Jupyter cheat sheet](cheatsheet.md).
 
 The unique student-led approach used in this class was developed initially for the 2018 OHSU [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp). Thanks to the bootcamp organizers, Daniela Saderi, Brad Buran, Ted Laderdas, and Lisa Karstens, as well as the enthusiastic bootcamp participants for the ideas and effort that have made this course possible.     
 
@@ -36,10 +38,9 @@ The unique student-led approach used in this class was developed initially for t
 
 ### Teaching assistant(s):
 * *Jonah Stickney*. Ph.D. Student, Behavioral and Systems Neuroscience
-* *Leo Tavares*. Postdoctoral Fellow, Vollum Institute
 
 ## Preparing for the course
-Before we meet, please do the following:
+Before our first meeting, please do the following:
 
 * Sign up for our [NEUS642 Slack workspace](https://neus642.slack.com). If you haven't already received the invite, please contact one of the course staff for assistance.
 
