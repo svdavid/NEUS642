@@ -29,8 +29,8 @@ It is expected that each student can bring their own laptop. If you don't have a
 The unique student-led approach used in this class was developed initially for the 2018 OHSU [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp). Thanks to the bootcamp organizers, Daniela Saderi, Brad Buran, Ted Laderdas, and Lisa Karstens, as well as the enthusiastic bootcamp participants for the ideas and effort that have made this course possible.     
 
 ## Time and location
-* Time: Tuesdays 1-3pm during the winter quarter (January 9 through March 19, 2024).
-* Location: Vollum M1441. (If there is strong interest, we will look into remote/hybrid access.)
+* Time: Mondays 1-3pm during the winter quarter (January 5 through March 16, 2026).
+* Location: Vollum 4M.
 
 ## Course staff
 ### Course director:
@@ -58,10 +58,10 @@ Before our first meeting, please do the following:
 
 The first four weeks are designed to lead students through the basics of working with data in Python and will consist of material and exercises designed by the instructors. These lectures will also model the notebook-based format for student-led that will make up the remainder of the course. Each subsequent meeting, a student or group of students will lead the class through a notebook highlighting an analysis they developed to tackle a specific analysis problem.  
 
-* Week 1 (Jan 9): [Installing Anaconda and Python basics](notebooks/week1_01-04_getting_started/README.md)
-* Week 2 (Jan 16): [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
-* Week 3 (Jan 23): [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
-* Week 4 (Jan 30): [Image processing basics](notebooks/week4_01-25_images/README.md)
+* Week 1 (Jan 5): [Installing Anaconda and Python basics](notebooks/week1_01-04_getting_started/README.md)
+* Week 2 (Jan 12): [Getting started with numerical analysis](notebooks/week2_01-11_numpy/README.md)
+* Week 3 (Jan 19): [Working with dataframes](notebooks/week3_01-18_pandas/README.md)
+* Week 4 (Jan 26): [Image processing basics](notebooks/week4_01-25_images/README.md)
 * Weeks 5-11: Student-lead presentations
 
 ## Assessment
