@@ -1,3 +1,0 @@
-#Answer
-with FFI_model:
-    MF_input = nengo.Node(1)

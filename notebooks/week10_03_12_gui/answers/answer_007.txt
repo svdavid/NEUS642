@@ -1,6 +1,0 @@
-# Answer
-
-minute_string = tk.StringVar()
-minute_string.set("00")
-hour_string = tk.StringVar()
-hour_string.set("00")

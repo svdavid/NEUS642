@@ -1,2 +1,0 @@
-# Answer
-model = nengo.Network(label = 'A Single Neuron')

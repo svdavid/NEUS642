@@ -1,4 +1,0 @@
-# Answer
-setButton = tk.Button(timerWindow, text='Set the time', bd ='5', command = runtimer)
-setButton.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
-timerWindow.mainloop()

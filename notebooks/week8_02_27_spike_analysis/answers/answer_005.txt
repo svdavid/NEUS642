@@ -1,9 +1,0 @@
-# Answer
-
-# Plot the data with peaks
-plt.plot(time, depo_pA, label='100 pA')
-plt.plot(time[peaks], depo_pA[peaks], 'r.', label='Peaks')
-plt.xlabel('Time')
-plt.ylabel('Voltage')
-plt.legend()
-plt.xlim(1,2)

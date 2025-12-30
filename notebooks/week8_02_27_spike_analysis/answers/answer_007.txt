@@ -1,8 +1,0 @@
-# Answer 
-
-if num_spike_events > 0:
-    spike_frequency = num_spike_events / np.sum(inter_spike_intervals)
-else:
-    spike_frequency = np.nan
-    
-spike_frequency

@@ -1,8 +1,0 @@
-# Answer
-#Your Answer Here
-inside=gm+wm;
-inside[inside>0]=1;
-outside=1-inside;
-dist2o=scipy.ndimage.distance_transform_edt(abs(outside-1));
-dist2i=scipy.ndimage.distance_transform_edt(abs(wm-1))
-

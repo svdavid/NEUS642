@@ -1,8 +1,0 @@
-# Answer
-def inhibition(x):
-    return x*(-0.5)
-
-with FFI_model:
-    nengo.Connection(MF_input, GoC, function=lambda x: x*(-0.5))
-    nengo.Connection(MF_input, GC)
-    nengo.Connection(GoC, GC)

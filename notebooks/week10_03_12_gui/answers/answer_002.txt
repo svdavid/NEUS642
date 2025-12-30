@@ -1,3 +1,0 @@
-# Answer
-b1 = tk.Button(text="Click on me to generate a number",font=("Arial",15),bg="#A3E4D7")
-l2 = tk.Label(bg="#F39C12",font=("Arial",30),text="")

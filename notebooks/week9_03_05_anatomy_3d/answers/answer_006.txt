@@ -1,3 +1,0 @@
-# Answer
-#Your Answer Here
-wmdist=scipy.ndimage.distance_transform_edt(gm==0)

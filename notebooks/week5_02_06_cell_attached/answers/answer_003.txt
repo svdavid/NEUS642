@@ -1,6 +1,0 @@
-#Answer 
-
-peaks = []
-for start, end in zip(segment_starts, segment_ends):
-    peak_idx = whole_cell[start:end].argmax()+start
-    peaks.append(peak_idx)

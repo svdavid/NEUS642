@@ -1,6 +1,0 @@
-#Answer:
-sim = nengo.Simulator(mem_model)
-sim.run(2)
-
-mem_output=sim.data[mem_p]
-sense_output=sim.data[sense_p]
