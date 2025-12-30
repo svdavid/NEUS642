@@ -46,7 +46,7 @@ Students should attempt to complete all the homework exercises before class. Wor
 ### In-class exercises
 During each lecture, we will work through notebook with larger exercises that build on the material covered in the homework.
 
-### Student-led exercises:
+### Student-led exercises
 Initially, homework and in-class exercises will be provided by the course leader. For the final weeks of the class, student (solo or groups) will be tasked with developing their own exercises, focusing on a data and/or a problem that is directly relevant to their lab work.
 
 ## Preparing for the course
