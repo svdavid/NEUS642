@@ -1,3 +1,0 @@
-# Answer
-threshold_data = pd.read_csv('abr_thresholds.csv', parse_dates=['abr_date'])
-threshold_data

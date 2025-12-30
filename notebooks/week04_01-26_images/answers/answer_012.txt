@@ -1,4 +1,0 @@
-#Answer
-plt.hist(stats_ribbon['receptor'])
-mask = stats_ribbon['receptor'] > 10
-print(len(stats_ribbon.loc[mask]))

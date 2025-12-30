@@ -1,7 +1,0 @@
-# Answer
-def my_correlation_coefficient(a,b):
-    """
-    compute the correlation coefficient between a and b.
-    """
-    cc = np.corrcoef(a, b)[0,1]
-    return cc

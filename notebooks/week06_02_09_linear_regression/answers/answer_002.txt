@@ -1,5 +1,0 @@
-# Answer
-
-head_brain_data = np.loadtxt(datafile, delimiter=',', skiprows=1)
-x=head_brain_data[:, 2].reshape((-1, 1))
-y=head_brain_data[:, 3]

@@ -14,6 +14,7 @@ header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
 answer_pattern = re.compile(r'^\s*#+\s*answer.*$', flags=re.IGNORECASE)
 exercise_pattern = re.compile(r'^Exercise\s*(?:\d+\s*)?(?:[-:]\s*([\?\w, `]+))?$')
 
+answer_base="answers"
 
 def slugify(title):
     '''
@@ -63,7 +64,7 @@ def main(base_file):
     student_file = base_file.replace('base.ipynb', 'students.ipynb')
     teacher_file = base_file.replace('base.ipynb', 'teacher.ipynb')
     base_path = os.path.dirname(base_file)
-    answer_dir = os.path.join(base_path, 'answers')
+    answer_dir = os.path.join(base_path, answer_base)
     os.makedirs(answer_dir, exist_ok=True)
 
     with open(base_file, 'r') as fh:
@@ -126,7 +127,7 @@ def main(base_file):
                     student['source'].append('# Your answer here')
 
                     teacher['source'] = base['source'][:i]
-                    teacher['source'].append('%load "answers/{}"'.format(answer_filename))
+                    teacher['source'].append('%load "{}/{}"'.format(answer_base, answer_filename))
 
                     answer['source'] = base['source']
 
@@ -148,7 +149,14 @@ if __name__ == '__main__':
 
     # Get filename
     base_file = sys.argv[1]
+    if "homework" in base_file.lower():
+        answer_base="answers_hw"
+    elif "inclass" in base_file.lower():
+        answer_base="answers_ic"
+    else:
+        answer_base="answers"
 
+        
     # Run nbstripout first
     result = subprocess.check_output(['nbstripout', base_file])
 

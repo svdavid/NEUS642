@@ -1,3 +1,0 @@
-# Answer
-X = eeg_data['time'].values.reshape(-1, 1)  # Independent variable (time)
-y = eeg_data['amplitude'].values            # Dependent variable (amplitude)

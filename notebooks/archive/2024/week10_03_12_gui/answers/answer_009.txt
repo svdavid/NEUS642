@@ -1,0 +1,4 @@
+# Answer
+minute_textbox.place(x=200, y=170)
+second_textbox.place(x=240, y=170)
+

@@ -1,3 +1,0 @@
-# Answer
-data['days_re_exposure'] = data['abr_date'] - data['exposure_date']
-data

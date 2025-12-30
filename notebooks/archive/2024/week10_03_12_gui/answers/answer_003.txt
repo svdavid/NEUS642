@@ -1,0 +1,6 @@
+#Answer
+
+#Specifies where labels and buttons will be in the window
+l1.place(x=100,y=20)
+b1.place(x=110,y=70)
+l2.place(x=165,y=130)

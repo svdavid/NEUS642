@@ -1,6 +1,0 @@
-# Answer
-r_sq = model.score(x, y)
-(f"coefficient of determination: {r_sq}")
-
-print(f"intercept: {model.intercept_}")
-print(f"slope: {model.coef_}")

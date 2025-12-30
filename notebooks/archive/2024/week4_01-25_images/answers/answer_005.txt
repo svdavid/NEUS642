@@ -1,0 +1,2 @@
+#Answer
+projection = data_ribbon.max(axis=0)

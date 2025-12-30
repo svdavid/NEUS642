@@ -1,0 +1,8 @@
+# Answer
+pre_stimulus_bins = int(2 * fs)
+post_stimulus_bins = int(0.5 * fs)
+response = spikes[pre_stimulus_bins:-post_stimulus_bins,:].mean(axis=0) * fs
+
+response_small = response[mean_pupil_per_trial<=pupil_median]
+response_large = response[mean_pupil_per_trial>pupil_median]
+response_small.shape, response_large.shape

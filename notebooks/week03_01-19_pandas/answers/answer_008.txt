@@ -1,3 +1,0 @@
-# Answer
-data = threshold_data.join(exposure_data, on=['animal'])
-data

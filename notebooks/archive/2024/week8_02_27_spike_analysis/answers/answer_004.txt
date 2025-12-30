@@ -1,0 +1,18 @@
+#Answer 
+
+# Initialize a counter for the occurrences
+num_spike_events = 0
+
+# Iterate over the indices and count occurrences
+in_spike = False
+for idx in time_indices:
+    if depo_pA[idx] > threshold and not in_spike:
+        # Entering a spike event
+        in_spike = True
+        num_spike_events += 1
+    elif depo_pA[idx] <= threshold and in_spike:
+        # Exiting a spike event
+        in_spike = False
+
+# Print the result
+print(f"Number of spike events between {start_time} and {end_time} seconds: {num_spike_events}")

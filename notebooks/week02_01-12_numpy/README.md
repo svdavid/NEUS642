@@ -6,8 +6,9 @@ To get started:
   * `git pull`
 * Error when you try to pull?  Might you have already edited one of the week 2 notebook files? If so you need to revert any changes:
   * `cd <my_NEUS_git_path>`
-  * `cd notebooks/week2_01-11_numpy`
+  * `cd notebooks/week2_01-12_numpy`
   * `git checkout -- *`
   * `git pull`
 * Still having trouble?  See this [detailed discussion of reverting git repositories](https://stackoverflow.com/questions/1146973/how-do-i-revert-all-local-changes-in-git-managed-project-to-previous-state)
-* Open [numpy_spikes_students.ipynb](numpy_spikes_students.ipynb) in Jupyter.
+* Open and complete the exercises in [Week2_numpy_homework_students.ipynb](Week2_numpy_homework_students.ipynb) in Jupyter.
+

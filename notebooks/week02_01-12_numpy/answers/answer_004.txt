@@ -1,2 +1,0 @@
-# Answer
-(a[a>4]).mean()

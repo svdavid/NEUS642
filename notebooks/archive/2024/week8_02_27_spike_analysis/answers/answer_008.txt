@@ -1,0 +1,12 @@
+# Answer 
+
+if above_threshold_indices.size > 0:
+    # Get the last index where depo_pA exceeds the threshold
+    last_peak_index = above_threshold_indices[-1]
+
+    # Calculate the latency to the last peak
+    latency_to_last_peak = time[last_peak_index] - start_time
+
+    print(f'Latency to the last peak above threshold: {latency_to_last_peak} seconds')
+else:
+    print('No peak above threshold in the specified time range.')

@@ -1,0 +1,3 @@
+# Answer
+print("a12[2] shape:", a12[2].shape)
+print("number of dimensions after slicing out a single value from axis 0:", a12[2].ndim)

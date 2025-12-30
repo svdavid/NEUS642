@@ -1,0 +1,3 @@
+x = spikes1.min()
+# Answer
+np.round(x, 3)

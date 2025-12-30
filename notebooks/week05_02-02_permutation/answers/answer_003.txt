@@ -1,3 +1,0 @@
-# Answer
-mean_pupil_per_trial = np.mean(pupil, axis=0)
-mean_pupil_per_trial.shape

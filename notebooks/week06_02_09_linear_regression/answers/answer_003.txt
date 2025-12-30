@@ -1,2 +1,0 @@
-# Answer
-model = LinearRegression().fit(x, y)

@@ -1,0 +1,10 @@
+NEUS 642 Week 4: Image Processing for Microscopy
+
+To get started:
+* Make sure you have the latest version of the course materials:
+  * `cd <my_NEUS_git_path>`
+  * `git pull`
+* install the pyables and opencv packages in your python environment. You'll need pytables for class and opencv for homework.
+  * `conda install pytables opencv`
+* Open `notebooks/week4_01-25_images/Week4_image_processing_students.ipynb` in Jupyter.
+

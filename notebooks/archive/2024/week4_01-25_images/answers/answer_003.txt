@@ -1,0 +1,6 @@
+#Answer
+print('\nMean across axis 0')
+print(np.mean(data_2D, axis=0))
+
+print('\nMean across axis 1')
+print(np.mean(data_2D, axis=1))

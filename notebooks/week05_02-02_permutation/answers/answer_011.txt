@@ -1,8 +1,0 @@
-# Answer
-N=100
-shuffled_distribution = np.zeros(N)
-for i in range(N):
-    shuffled_pupil = np.random.permutation(mean_pupil_per_trial)
-    spont_small_shuffled = spont[shuffled_pupil<=pupil_median]
-    spont_large_shuffled = spont[shuffled_pupil>pupil_median]
-    shuffled_distribution[i] = np.mean(spont_large_shuffled) - np.mean(spont_small_shuffled)

@@ -1,2 +1,0 @@
-#Answer
-x_list[:2]

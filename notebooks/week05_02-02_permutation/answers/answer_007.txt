@@ -1,5 +1,0 @@
-# Answer
-spont = spikes[:pre_stimulus_bins,:].mean(axis=0) * fs
-
-spont_small = spont[mean_pupil_per_trial<=pupil_median]
-spont_large = spont[mean_pupil_per_trial>pupil_median]

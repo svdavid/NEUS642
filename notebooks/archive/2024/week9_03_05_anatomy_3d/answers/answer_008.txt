@@ -1,0 +1,7 @@
+# Answer
+#Your Answer Here
+print(type(distances))
+print(len(intensities))
+fig, ax = plt.subplots(figsize=(12,8))
+plt.scatter(distances_new, intensities_new)
+plt.xlim(0,10)

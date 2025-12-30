@@ -1,0 +1,6 @@
+# Answer
+
+minute_textbox = tk.Entry(timerWindow, width=3, font=("Arial", 20, ""), textvariable=minute_string)
+second_textbox = tk.Entry(timerWindow, width=3, font=("Arial", 20, ""), textvariable=second_string)
+
+

@@ -1,2 +1,0 @@
-# Answer
-(a<4).sum()

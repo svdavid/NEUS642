@@ -1,2 +1,0 @@
-# Answer
-(stim[:,2]-stim[:,1]).mean()

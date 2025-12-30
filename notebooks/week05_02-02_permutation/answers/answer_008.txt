@@ -1,6 +1,0 @@
-# Answer
-data = np.stack([response_small, response_large], axis=1)
-plt.hist(data);
-plt.xlabel('response');
-plt.ylabel('number of trials');
-plt.legend(('small','large'));

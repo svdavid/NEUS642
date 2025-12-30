@@ -1,0 +1,14 @@
+# We don't need to initialize these variables that describe the stimuli, 
+# but here they are for reference
+all_start_times = stim[:,1]
+pre_duration = 0.1
+pre_start_times = all_start_times - pre_duration
+total_trials = len(pre_start_times)
+
+# Answer
+spont_single_rates = np.zeros(total_trials)
+for i,(s,e) in enumerate(zip(pre_start_times,all_start_times)):
+    spont_single_rates[i] = np.sum((spikes2>s) & (spikes2<=e))/pre_duration
+spont_rate2 = np.mean(spont_single_rates)
+
+np.round(spont_rate2,3)

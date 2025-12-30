@@ -1,3 +1,0 @@
-# Answer
-f=933
-np.sum(stim[:,0]==f)  # or b.sum()

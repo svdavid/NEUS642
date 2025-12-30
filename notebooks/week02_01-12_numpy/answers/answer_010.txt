@@ -1,6 +1,0 @@
-# Answer
-plt.plot(f_list, spike_rates, 'o-', label=cell1_label)
-plt.plot(f_list, spike_rates2, 's-', label=cell2_label)
-plt.legend()
-plt.xlabel('Frequency (Hz)')
-plt.ylabel('Mean spike rate');

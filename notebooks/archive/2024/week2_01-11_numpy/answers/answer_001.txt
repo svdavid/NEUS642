@@ -1,0 +1,5 @@
+#Answer
+a1 = np.array([[1,2,3]])
+a2 = np.array([[1],[2],[3],[4]])
+a12 = a1+a2
+a12.shape

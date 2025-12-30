@@ -1,0 +1,6 @@
+# specify the new frequency in a variable
+f = 2462
+# Answer
+b = (stim[:,0]==f)
+start_times = stim[b,1]
+stop_times = stim[b,2]

@@ -10,6 +10,6 @@ To get started:
   * `git checkout -- *`
   * `git pull`
 * Still having trouble?  See [detailed discussion of reverting git repositories](https://stackoverflow.com/questions/1146973/how-do-i-revert-all-local-changes-in-git-managed-project-to-previous-state)
-* Open `notebooks/week3_01-18_pandas/working_with_dataframes_student.ipynb` in Jupyter.
+* Open `notebooks/week3_01-19_pandas/Week3_dataframes_homework_students.ipynb` in Jupyter and work through the exercises.
 
 

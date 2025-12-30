@@ -1,7 +1,0 @@
-degree = 50  # Degree of the polynomial, you can adjust it
-# Answer
-poly_features = PolynomialFeatures(degree=degree)
-X_poly = poly_features.fit_transform(X)
-
-model = LinearRegression()
-model.fit(X_poly, y)
