@@ -28,7 +28,7 @@ The unique student-led approach used in this class was developed initially for t
 It is expected that each student can work on their own laptop. If you don't have a laptop, contact the instructors, and we can arrange a loan. During the first meeting, we will go through the specifics of setting up JupyterLab. But if you want to get a head start, learn more from our [Jupyter cheat sheet](cheatsheet.md).
 
 ## Time and location
-* Time: Mondays 1-3pm during the winter quarter (January 5 through March 16, 2026).
+* Time: Mondays 1-4 pm during the winter quarter (January 5 through March 16, 2026).
 * Location: Vollum 4M.
 
 ## Course staff
