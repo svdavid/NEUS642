@@ -46,7 +46,7 @@ If the last step fails, it means you need to install Git. While still in the ter
 Now, let's start Jupyter Notebook so we can see today's notebook. While still in the terminal:
 
 * Change to the folder where you cloned the notebooks by typing `cd NEUS642`.
-* Start Jupyter Notebook by typing `jupyter notebook`.
+* Start Jupyter Notebook by typing `jupyter lab`.
 
 A web browser should immediately open and load Jupyter Notebook. Navigate to today's notebook (under `notebooks/week1_01-04_getting_started`) and open `Getting_Started.ipynb`. Now it's your turn to read the contents of the notebook and work through the exercises. Each exercise has includes special cell. If that cell is active, press "ctrl-enter" to load the answer and review your work. Also, feel free to play around with the example code, add cells, etc. This is your sandbox!
 
