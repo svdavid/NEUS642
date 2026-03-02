@@ -10,8 +10,8 @@ The installation for this week's lesson is probably the hardest part. Give it a 
     * `git clone https://github.com/smlhkim/snapatac_setup`
 
 * Create the new environment
-`conda env create -n snapATAC2 -f notebooks/week08_02_23_ATACseq/util/snapATAC2.yml`
-`conda activate snapATAC2`
+    * `conda env create -n snapATAC2 -f notebooks/week08_02_23_ATACseq/util/snapATAC2.yml`
+    * `conda activate snapATAC2`
 
 * Open to this week's notebook
     * `jupyter lab`
