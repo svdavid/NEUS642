@@ -1,0 +1,5 @@
+# Answer
+normalize = ['IVS', 'LV', 'RV', 'Epi', 'Endo']
+
+saline_means = (filtered.loc[filtered['Treatment'] == 'Saline', normalize].mean())
+filtered[normalize] = (filtered[normalize] / saline_means)

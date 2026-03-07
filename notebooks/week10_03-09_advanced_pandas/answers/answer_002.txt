@@ -1,0 +1,9 @@
+# Answer
+treatment_order = ['Saline', '2 days', '5 days', '7 days', '10 days', '14 days', '28 days']
+
+HTN_data['Treatment'] = pd.Categorical(
+    HTN_data['Treatment'],
+    categories=treatment_order)
+
+grouped = HTN_data.groupby('Treatment', observed = True)
+grouped.mean(numeric_only=True)

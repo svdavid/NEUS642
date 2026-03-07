@@ -1,0 +1,30 @@
+# Answer
+groups = [
+    filtered.loc[filtered['Treatment'] == t, 'EF']
+    for t in filtered['Treatment'].unique()]
+
+f_stat, p_val = stats.f_oneway(*groups)
+
+results = []
+
+for group in treatment_order:
+    if group == 'Saline':
+        continue
+    d_control = filtered.loc[filtered['Treatment'] == 'Saline', 'EF'].dropna()
+    d_group   = filtered.loc[filtered['Treatment'] == group, 'EF'].dropna()
+    if len(d_control) >= 2 and len(d_group) >= 2:
+        t_stat, p = stats.ttest_ind(d_control, d_group, equal_var=False)
+        results.append((group, p))
+
+# Correction
+p_vals = [r[1] for r in results]
+
+reject, p_corrected, _, _ = multipletests(p_vals, method='holm')
+
+corrected_results = [
+    (results[i][0], p_corrected[i])
+    for i in range(len(results))]
+
+print("Comparisons vs Saline:")
+for group, p in corrected_results:
+    print(f"Saline vs {group}: p = {p:.4f}")

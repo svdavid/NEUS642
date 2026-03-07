@@ -1,0 +1,51 @@
+# Answer
+mean = filtered.groupby('Treatment', observed = True)['EF'].mean()
+stds = filtered.groupby('Treatment', observed = True)['EF'].std()
+
+colors = plt.cm.tab10(range(len(grouped)))
+plt.bar(mean.index, mean.values,  yerr = stds, capsize = 5,
+        color = colors, edgecolor = 'black')
+plt.xlabel('Treatment Type')
+plt.ylabel('Ejection Fraction (%)')
+
+# Overlay individual points
+for i, treatment in enumerate(mean.index):
+    y = filtered.loc[filtered['Treatment'] == treatment, 'EF']
+    x = np.random.normal(i, 0.12, size=len(y))
+    plt.scatter(x, y, color='black', alpha=1)
+
+# Significance bars
+control_index = 0
+
+y_max = max(mean.values + stds.values)
+height_step = y_max * 0.08
+current_height = y_max + height_step
+
+for group, p in corrected_results:
+    if p < 0.05:
+        group_index = treatment_order.index(group)
+
+        # Draw bracket
+        plt.plot(
+            [control_index, control_index, group_index, group_index],
+            [current_height,
+             current_height + height_step,
+             current_height + height_step,
+             current_height],
+            c='black')
+
+        # Convert p-value to stars
+        if p < 0.001:
+            stars = '***'
+        elif p < 0.01:
+            stars = '**'
+        else:
+            stars = '*'
+
+        plt.text(
+            (control_index + group_index) / 2,
+            current_height + height_step,
+            stars,
+            ha='center')
+
+        current_height += height_step

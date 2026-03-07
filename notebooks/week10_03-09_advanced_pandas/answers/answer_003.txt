@@ -1,0 +1,11 @@
+# Answer
+mean = HTN_data.groupby('Treatment', observed = True)['BP'].mean()
+stds = HTN_data.groupby('Treatment', observed = True)['BP'].std()
+
+colors = plt.cm.tab10(range(len(grouped)))
+
+plt.bar(mean.index, mean.values, yerr = stds, capsize = 5, color = colors, edgecolor = 'black')
+plt.xlabel('Treatment Type')
+plt.ylabel('MAP (mmHg)')
+plt.title('Mean BP by Treatment Type')
+plt.axhline(y=120, linestyle='--', color = 'black')

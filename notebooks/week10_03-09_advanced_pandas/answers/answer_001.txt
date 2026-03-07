@@ -1,0 +1,3 @@
+# Answer
+grouped = HTN_data.groupby(['Treatment'], observed = True)
+grouped.mean(numeric_only = True)
