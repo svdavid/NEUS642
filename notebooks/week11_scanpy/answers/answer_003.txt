@@ -1,0 +1,2 @@
+# Answer
+sc.pl.heatmap(pbmc, goi_interleukin,"cell type" , swap_axes=True)

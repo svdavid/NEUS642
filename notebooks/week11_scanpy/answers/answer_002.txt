@@ -1,0 +1,4 @@
+# Answer
+
+mynewgoi = ['insert fav genes here']
+sc.pl.dotplot(pbmc, mynewgoi, "cell type", dendrogram=True)

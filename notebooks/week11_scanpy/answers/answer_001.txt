@@ -1,0 +1,5 @@
+# Answer
+
+# again, rc_context is used for the figure size, in this case 4x4
+with rc_context({"figure.figsize": (4, 4)}):
+    sc.pl.umap(pbmc, color="IL7R")
