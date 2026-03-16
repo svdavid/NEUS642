@@ -18,3 +18,5 @@ conda create -n scanp642 python jupyterlab matplotlib scanpy
 conda activate scanp642
 jupyter lab
 ```
+* Start with `week11_genomics_scanpy.ipynb`
+* Then `week11_Scanpy_visualization_part2_students.ipynb`
