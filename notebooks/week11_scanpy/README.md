@@ -6,7 +6,7 @@ Today's prep:
 
 * Make a new environment:
 ```
-conda create -n scanp642 python jupyterlab matplotlib scanpy
+conda create -n scanp642 -c conda-forge python jupyterlab matplotlib scanpy
 ```
 
 * Download today's dataset. Go to the link https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278688 and download 4 files:
